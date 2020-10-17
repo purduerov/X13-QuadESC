@@ -2416,9 +2416,6 @@ Through Hole Spacing: 20mmx20mm</description>
 <text x="419.1" y="168.91" size="1.778" layer="91">STM32F042K6T6</text>
 <text x="354.33" y="76.2" size="1.778" layer="91">CAN TRANSCEIVER</text>
 <text x="474.98" y="78.74" size="1.778" layer="91">OSCILLATOR</text>
-<text x="179.07" y="129.032" size="1.778" layer="91">temp connections
-bc idk how we're 
-doing these</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="3.81" y="3.81" smashed="yes">
@@ -2599,9 +2596,7 @@ doing these</text>
 <instance part="SUPPLY3" gate="GND" x="116.84" y="135.89" smashed="yes">
 <attribute name="VALUE" x="114.935" y="132.715" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY4" gate="GND" x="186.69" y="140.97" smashed="yes">
-<attribute name="VALUE" x="184.785" y="137.795" size="1.778" layer="96"/>
-</instance>
+<instance part="SUPPLY4" gate="GND" x="186.69" y="140.97" smashed="yes"/>
 <instance part="U$1" gate="G$1" x="40.64" y="116.84" smashed="yes"/>
 </instances>
 <busses>
@@ -3132,11 +3127,6 @@ doing these</text>
 <wire x1="191.77" y1="52.07" x2="179.07" y2="52.07" width="0.1524" layer="91"/>
 <label x="177.8" y="52.324" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="P$19"/>
-<wire x1="162.56" y1="138.43" x2="172.466" y2="138.43" width="0.1524" layer="91"/>
-<label x="165.354" y="138.938" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SWDIO_IN" class="0">
 <segment>
@@ -3144,22 +3134,12 @@ doing these</text>
 <wire x1="191.77" y1="44.45" x2="179.07" y2="44.45" width="0.1524" layer="91"/>
 <label x="177.8" y="44.958" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="P$20"/>
-<wire x1="162.56" y1="133.35" x2="172.466" y2="133.35" width="0.1524" layer="91"/>
-<label x="165.608" y="133.858" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="NRST_IN" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="3A"/>
 <wire x1="217.17" y1="41.91" x2="232.41" y2="41.91" width="0.1524" layer="91"/>
 <label x="222.25" y="41.91" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="P$21"/>
-<wire x1="162.56" y1="128.27" x2="172.212" y2="128.27" width="0.1524" layer="91"/>
-<label x="166.116" y="128.778" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -3176,10 +3156,6 @@ doing these</text>
 </schematic>
 </drawing>
 <compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
