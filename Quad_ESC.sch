@@ -2805,8 +2805,8 @@ W = angled&lt;p&gt;
 <instance part="P+4" gate="1" x="168.91" y="125.73" smashed="yes">
 <attribute name="VALUE" x="166.37" y="120.65" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY3" gate="GND" x="99.06" y="140.97" smashed="yes">
-<attribute name="VALUE" x="97.155" y="137.795" size="1.778" layer="96"/>
+<instance part="SUPPLY3" gate="GND" x="88.9" y="140.97" smashed="yes">
+<attribute name="VALUE" x="86.995" y="137.795" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY4" gate="GND" x="168.91" y="146.05" smashed="yes"/>
 <instance part="U$1" gate="G$1" x="45.72" y="160.02" smashed="yes">
@@ -3002,9 +3002,9 @@ W = angled&lt;p&gt;
 <pinref part="U$2" gate="G$1" pin="P$2"/>
 <wire x1="111.76" y1="158.75" x2="106.68" y2="158.75" width="0.1524" layer="91"/>
 <junction x="106.68" y="158.75"/>
-<wire x1="106.68" y1="148.59" x2="99.06" y2="148.59" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="148.59" x2="88.9" y2="148.59" width="0.1524" layer="91"/>
 <junction x="106.68" y="148.59"/>
-<wire x1="99.06" y1="148.59" x2="99.06" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="148.59" x2="88.9" y2="143.51" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -3425,12 +3425,18 @@ W = angled&lt;p&gt;
 <label x="358.14" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="PROG_SEL" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="OE"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="217.17" y1="62.23" x2="227.076" y2="62.23" width="0.1524" layer="91"/>
 <wire x1="227.076" y1="62.23" x2="227.076" y2="59.69" width="0.1524" layer="91"/>
+<label x="220.218" y="62.484" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="P$5"/>
+<wire x1="111.76" y1="143.51" x2="96.52" y2="143.51" width="0.1524" layer="91"/>
+<label x="96.266" y="143.51" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TIM3_CH1" class="0">
@@ -3645,12 +3651,22 @@ W = angled&lt;p&gt;
 <wire x1="420.37" y1="53.34" x2="430.53" y2="53.34" width="0.1524" layer="91"/>
 <label x="425.45" y="53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="P$6"/>
+<wire x1="111.76" y1="138.43" x2="96.52" y2="138.43" width="0.1524" layer="91"/>
+<label x="96.012" y="138.43" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CAN_L" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="CANL"/>
 <wire x1="420.37" y1="48.26" x2="430.53" y2="48.26" width="0.1524" layer="91"/>
 <label x="425.45" y="48.26" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="111.76" y1="133.35" x2="96.52" y2="133.35" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="P$7"/>
+<label x="96.52" y="133.35" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
