@@ -72,14 +72,6 @@
 <smd name="P$10" x="21.34" y="-2.701" dx="5.12" dy="2.67" layer="1" rot="R90"/>
 <smd name="P$11" x="21.34" y="-8.201" dx="5.12" dy="2.67" layer="1" rot="R90"/>
 <smd name="P$12" x="21.34" y="-13.701" dx="5.12" dy="2.67" layer="1" rot="R90"/>
-<pad name="P$15" x="-5.288" y="9.896" drill="0.6"/>
-<pad name="P$16" x="-3.764" y="9.896" drill="0.6"/>
-<pad name="P$17" x="-2.24" y="9.896" drill="0.6"/>
-<pad name="P$18" x="-0.716" y="9.896" drill="0.6"/>
-<pad name="P$19" x="0.808" y="9.896" drill="0.6"/>
-<pad name="P$20" x="2.332" y="9.896" drill="0.6"/>
-<pad name="P$21" x="3.856" y="9.896" drill="0.6"/>
-<pad name="P$22" x="5.38" y="9.896" drill="0.6"/>
 <smd name="P$13" x="-3.741" y="-12.247" dx="6.31" dy="4.14" layer="1"/>
 <smd name="P$14" x="3.759" y="-12.247" dx="6.31" dy="4.14" layer="1"/>
 <hole x="-10" y="10" drill="3.2"/>
@@ -194,13 +186,27 @@
 <wire x1="-8.52" y1="-3.9" x2="-8.52" y2="3.9" width="0.127" layer="21"/>
 <text x="-8.8" y="4.8" size="1.27" layer="21">&gt;NAME</text>
 </package>
+<package name="8PI_CONNECTOR">
+<wire x1="0" y1="0" x2="10" y2="0" width="0.1524" layer="21"/>
+<wire x1="10" y1="0" x2="10" y2="4.25" width="0.1524" layer="21"/>
+<wire x1="10" y1="4.25" x2="0" y2="4.25" width="0.1524" layer="21"/>
+<wire x1="0" y1="4.25" x2="0" y2="0" width="0.1524" layer="21"/>
+<smd name="P$1" x="1.5" y="-0.25" dx="0.5" dy="0.7" layer="1"/>
+<smd name="P$2" x="2.5" y="-0.25" dx="0.5" dy="0.7" layer="1"/>
+<smd name="P$3" x="3.5" y="-0.25" dx="0.5" dy="0.7" layer="1"/>
+<smd name="P$4" x="4.5" y="-0.25" dx="0.5" dy="0.7" layer="1"/>
+<smd name="P$5" x="5.5" y="-0.25" dx="0.5" dy="0.7" layer="1"/>
+<smd name="P$6" x="6.5" y="-0.25" dx="0.5" dy="0.7" layer="1"/>
+<smd name="P$7" x="7.5" y="-0.25" dx="0.5" dy="0.7" layer="1"/>
+<smd name="P$8" x="8.5" y="-0.25" dx="0.5" dy="0.7" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BLHELI_45A">
 <wire x1="0" y1="0" x2="35.56" y2="0" width="0.1524" layer="94"/>
-<wire x1="35.56" y1="0" x2="35.56" y2="35.56" width="0.1524" layer="94"/>
-<wire x1="35.56" y1="35.56" x2="0" y2="35.56" width="0.1524" layer="94"/>
-<wire x1="0" y1="35.56" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="35.56" y1="0" x2="35.56" y2="26.67" width="0.1524" layer="94"/>
+<wire x1="35.56" y1="26.67" x2="0" y2="26.67" width="0.1524" layer="94"/>
+<wire x1="0" y1="26.67" x2="0" y2="0" width="0.1524" layer="94"/>
 <pin name="M1_P1" x="-5.08" y="22.86" length="middle"/>
 <pin name="M1_P2" x="-5.08" y="19.05" length="middle"/>
 <pin name="M1_P3" x="-5.08" y="15.24" length="middle"/>
@@ -213,14 +219,6 @@
 <pin name="M4_P1" x="40.64" y="11.43" length="middle" rot="R180"/>
 <pin name="M4_P2" x="40.64" y="7.62" length="middle" rot="R180"/>
 <pin name="M4_P3" x="40.64" y="3.81" length="middle" rot="R180"/>
-<pin name="LIPO_IN" x="8.89" y="40.64" length="middle" rot="R270"/>
-<pin name="LIPO_GND" x="11.43" y="40.64" length="middle" rot="R270"/>
-<pin name="ADC" x="13.97" y="40.64" length="middle" rot="R270"/>
-<pin name="TLM/RX2" x="16.51" y="40.64" length="middle" rot="R270"/>
-<pin name="MTR_1" x="19.05" y="40.64" length="middle" rot="R270"/>
-<pin name="MTR_2" x="21.59" y="40.64" length="middle" rot="R270"/>
-<pin name="MTR_3" x="24.13" y="40.64" length="middle" rot="R270"/>
-<pin name="MTR_4" x="26.67" y="40.64" length="middle" rot="R270"/>
 <pin name="GND" x="12.7" y="-5.08" length="middle" rot="R90"/>
 <pin name="+12V" x="22.86" y="-5.08" length="middle" rot="R90"/>
 </symbol>
@@ -311,6 +309,20 @@
 <pin name="C" x="-12.7" y="-5.08" length="middle"/>
 <text x="-7.62" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="8PIN_CONNECTOR">
+<wire x1="0" y1="0" x2="20" y2="0" width="0.1524" layer="94"/>
+<wire x1="20" y1="0" x2="20" y2="9.54" width="0.1524" layer="94"/>
+<wire x1="20" y1="9.54" x2="0" y2="9.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="9.54" x2="0" y2="0" width="0.1524" layer="94"/>
+<pin name="LIPO_IN" x="3" y="-5" length="middle" rot="R90"/>
+<pin name="LIPO_GND" x="5" y="-5" length="middle" rot="R90"/>
+<pin name="ADC" x="7" y="-5" length="middle" rot="R90"/>
+<pin name="TLM" x="9" y="-5" length="middle" rot="R90"/>
+<pin name="MTR_1" x="11" y="-5" length="middle" rot="R90"/>
+<pin name="MTR_2" x="13" y="-5" length="middle" rot="R90"/>
+<pin name="MTR_3" x="15" y="-5" length="middle" rot="R90"/>
+<pin name="MTR_4" x="17" y="-5" length="middle" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BL_HELI45A">
@@ -326,10 +338,7 @@ Through Hole Spacing: 20mmx20mm</description>
 <device name="" package="BLHELI_20X20">
 <connects>
 <connect gate="G$1" pin="+12V" pad="P$14"/>
-<connect gate="G$1" pin="ADC" pad="P$17"/>
 <connect gate="G$1" pin="GND" pad="P$13"/>
-<connect gate="G$1" pin="LIPO_GND" pad="P$16"/>
-<connect gate="G$1" pin="LIPO_IN" pad="P$15"/>
 <connect gate="G$1" pin="M1_P1" pad="P$1"/>
 <connect gate="G$1" pin="M1_P2" pad="P$2"/>
 <connect gate="G$1" pin="M1_P3" pad="P$3"/>
@@ -342,11 +351,6 @@ Through Hole Spacing: 20mmx20mm</description>
 <connect gate="G$1" pin="M4_P1" pad="P$10"/>
 <connect gate="G$1" pin="M4_P2" pad="P$11"/>
 <connect gate="G$1" pin="M4_P3" pad="P$12"/>
-<connect gate="G$1" pin="MTR_1" pad="P$19"/>
-<connect gate="G$1" pin="MTR_2" pad="P$20"/>
-<connect gate="G$1" pin="MTR_3" pad="P$21"/>
-<connect gate="G$1" pin="MTR_4" pad="P$22"/>
-<connect gate="G$1" pin="TLM/RX2" pad="P$18"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -462,6 +466,28 @@ Through Hole Spacing: 20mmx20mm</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="B" pad="B"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="8PIN_CONNECTOR">
+<gates>
+<gate name="G$1" symbol="8PIN_CONNECTOR" x="-10.16" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="8PI_CONNECTOR">
+<connects>
+<connect gate="G$1" pin="ADC" pad="P$3"/>
+<connect gate="G$1" pin="LIPO_GND" pad="P$2"/>
+<connect gate="G$1" pin="LIPO_IN" pad="P$1"/>
+<connect gate="G$1" pin="MTR_1" pad="P$5"/>
+<connect gate="G$1" pin="MTR_2" pad="P$6"/>
+<connect gate="G$1" pin="MTR_3" pad="P$7"/>
+<connect gate="G$1" pin="MTR_4" pad="P$8"/>
+<connect gate="G$1" pin="TLM" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
