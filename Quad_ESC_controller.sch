@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -1314,110 +1314,6 @@ Warning: This is the KIT version of the AXIAL-0.1 package. This package has a sm
 <wire x1="-8.52" y1="-3.9" x2="-8.52" y2="3.9" width="0.127" layer="21"/>
 <text x="-8.8" y="4.8" size="1.27" layer="21">&gt;NAME</text>
 </package>
-<package name="LUMENIER_QUAD" urn="urn:adsk.eagle:footprint:24294692/1" locally_modified="yes">
-<wire x1="46" y1="0" x2="46" y2="33.4" width="0.127" layer="21"/>
-<wire x1="0" y1="33.4" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="12.38" y2="0" width="0.127" layer="21"/>
-<wire x1="12.38" y1="0" x2="15.05" y2="2.7" width="0.127" layer="21"/>
-<wire x1="15.05" y1="2.7" x2="16.51" y2="2.7" width="0.127" layer="21"/>
-<wire x1="16.51" y1="2.7" x2="27.94" y2="2.7" width="0.127" layer="21"/>
-<wire x1="27.94" y1="2.7" x2="30.95" y2="2.7" width="0.127" layer="21"/>
-<wire x1="30.95" y1="2.7" x2="33.62" y2="0" width="0.127" layer="21"/>
-<wire x1="33.62" y1="0" x2="46" y2="0" width="0.127" layer="21"/>
-<wire x1="16.51" y1="2.7" x2="16.51" y2="5.24" width="0.127" layer="21"/>
-<wire x1="16.51" y1="5.24" x2="27.94" y2="5.24" width="0.127" layer="21"/>
-<wire x1="27.94" y1="5.24" x2="27.94" y2="2.7" width="0.127" layer="21"/>
-<wire x1="10.62" y1="5.62" x2="10.62" y2="1.62" width="0" layer="20"/>
-<wire x1="10.62" y1="1.62" x2="9" y2="0" width="0" layer="20" curve="-90"/>
-<wire x1="9" y1="0" x2="4" y2="0" width="0" layer="20"/>
-<wire x1="4" y1="0" x2="2.54" y2="1.46" width="0" layer="20" curve="-90"/>
-<wire x1="2.54" y1="1.46" x2="2.54" y2="32.54" width="0" layer="20"/>
-<wire x1="2.54" y1="32.54" x2="4.02" y2="34.02" width="0" layer="20" curve="-90"/>
-<wire x1="4.02" y1="34.02" x2="8.98" y2="34.02" width="0" layer="20"/>
-<wire x1="8.98" y1="34.02" x2="10.62" y2="32.38" width="0" layer="20" curve="-90"/>
-<wire x1="10.62" y1="32.38" x2="10.62" y2="24.38" width="0" layer="20"/>
-<wire x1="10.62" y1="24.38" x2="12" y2="23" width="0" layer="20" curve="90"/>
-<wire x1="12" y1="23" x2="14" y2="21" width="0" layer="20" curve="-90"/>
-<wire x1="14" y1="21" x2="14" y2="9" width="0" layer="20"/>
-<wire x1="14" y1="9" x2="12" y2="7" width="0" layer="20" curve="-90"/>
-<wire x1="12" y1="7" x2="10.62" y2="5.62" width="0" layer="20" curve="90"/>
-<wire x1="0" y1="33.4" x2="13.97" y2="33.4" width="0.127" layer="21"/>
-<wire x1="13.97" y1="33.4" x2="16.08" y2="31.39" width="0.127" layer="21"/>
-<wire x1="16.08" y1="31.39" x2="16.77" y2="31.39" width="0.127" layer="21"/>
-<wire x1="16.77" y1="31.39" x2="20.25" y2="31.39" width="0.127" layer="21"/>
-<wire x1="20.25" y1="31.39" x2="29.93" y2="31.39" width="0.127" layer="21"/>
-<wire x1="29.93" y1="31.39" x2="31.98" y2="33.4" width="0.127" layer="21"/>
-<wire x1="31.98" y1="33.4" x2="46" y2="33.4" width="0.127" layer="21"/>
-<wire x1="25.74" y1="31.39" x2="29.23" y2="31.39" width="0.127" layer="21" curve="180"/>
-<wire x1="24" y1="25" x2="33" y2="25" width="0" layer="20"/>
-<wire x1="30" y1="15" x2="24" y2="15" width="0" layer="20"/>
-<wire x1="24" y1="15" x2="22" y2="17" width="0" layer="20" curve="-90"/>
-<wire x1="22" y1="17" x2="22" y2="23" width="0" layer="20"/>
-<wire x1="22" y1="23" x2="24" y2="25" width="0" layer="20" curve="-90"/>
-<wire x1="37" y1="0" x2="42" y2="0" width="0" layer="20"/>
-<wire x1="42" y1="0" x2="43.25" y2="1.25" width="0" layer="20" curve="90"/>
-<wire x1="43.25" y1="1.25" x2="43.25" y2="32.75" width="0" layer="20"/>
-<wire x1="43.25" y1="32.75" x2="42" y2="34" width="0" layer="20" curve="90"/>
-<wire x1="42" y1="34" x2="37" y2="34" width="0" layer="20"/>
-<wire x1="37" y1="34" x2="35" y2="32" width="0" layer="20" curve="90"/>
-<wire x1="35" y1="32" x2="35" y2="27" width="0" layer="20"/>
-<wire x1="35" y1="27" x2="33" y2="25" width="0" layer="20" curve="-90"/>
-<wire x1="32" y1="13" x2="32" y2="9" width="0" layer="20"/>
-<wire x1="32" y1="9" x2="34" y2="7" width="0" layer="20" curve="90"/>
-<wire x1="34" y1="7" x2="35.5" y2="5.5" width="0" layer="20" curve="-90"/>
-<wire x1="35.5" y1="5.5" x2="35.5" y2="1.5" width="0" layer="20"/>
-<wire x1="35.5" y1="1.5" x2="37" y2="0" width="0" layer="20" curve="90"/>
-<wire x1="-0.254" y1="33.7" x2="13.97" y2="33.7" width="0.127" layer="39"/>
-<wire x1="13.97" y1="33.7" x2="16.51" y2="31.624" width="0.127" layer="39"/>
-<wire x1="16.51" y1="31.624" x2="29.08" y2="31.624" width="0.127" layer="39"/>
-<wire x1="29.08" y1="31.624" x2="31.62" y2="33.7" width="0.127" layer="39"/>
-<wire x1="31.62" y1="33.7" x2="46.228" y2="33.7" width="0.127" layer="39"/>
-<wire x1="46.228" y1="33.7" x2="46.228" y2="-0.254" width="0.127" layer="39"/>
-<wire x1="46.228" y1="-0.254" x2="32.75" y2="-0.254" width="0.127" layer="39"/>
-<wire x1="32.75" y1="-0.254" x2="30.21" y2="2.286" width="0.127" layer="39"/>
-<wire x1="30.21" y1="2.286" x2="15.24" y2="2.286" width="0.127" layer="39"/>
-<wire x1="15.24" y1="2.286" x2="12.7" y2="-0.254" width="0.127" layer="39"/>
-<wire x1="12.7" y1="-0.254" x2="-0.254" y2="-0.254" width="0.127" layer="39"/>
-<wire x1="-0.254" y1="-0.254" x2="-0.254" y2="33.7" width="0.127" layer="39"/>
-<wire x1="16.77" y1="31.39" x2="20.25" y2="31.39" width="0.127" layer="21" curve="180"/>
-<wire x1="30.57" y1="17.11" x2="30.57" y2="23.31" width="0.127" layer="21"/>
-<wire x1="30.57" y1="23.31" x2="23.45" y2="23.31" width="0.127" layer="21"/>
-<wire x1="23.45" y1="23.31" x2="23.45" y2="17.11" width="0.127" layer="21"/>
-<wire x1="23.45" y1="17.11" x2="30.57" y2="17.11" width="0.127" layer="21"/>
-<wire x1="3.53" y1="0.84" x2="9.03" y2="0.84" width="0.127" layer="21"/>
-<wire x1="9.03" y1="0.84" x2="9.03" y2="32.8" width="0.127" layer="21"/>
-<wire x1="9.03" y1="32.8" x2="3.53" y2="32.8" width="0.127" layer="21"/>
-<wire x1="3.53" y1="32.8" x2="3.53" y2="0.84" width="0.127" layer="21"/>
-<wire x1="36.97" y1="0.84" x2="42.47" y2="0.84" width="0.127" layer="21"/>
-<wire x1="42.47" y1="0.84" x2="42.47" y2="32.8" width="0.127" layer="21"/>
-<wire x1="42.47" y1="32.8" x2="36.97" y2="32.8" width="0.127" layer="21"/>
-<wire x1="36.97" y1="32.8" x2="36.97" y2="0.84" width="0.127" layer="21"/>
-<wire x1="10.69" y1="8.44" x2="12.29" y2="8.44" width="0.127" layer="21"/>
-<wire x1="12.29" y1="8.44" x2="12.29" y2="21.54" width="0.127" layer="21"/>
-<wire x1="12.29" y1="21.54" x2="10.69" y2="21.54" width="0.127" layer="21"/>
-<wire x1="10.69" y1="21.54" x2="10.69" y2="8.44" width="0.127" layer="21"/>
-<wire x1="33.71" y1="8.44" x2="35.31" y2="8.44" width="0.127" layer="21"/>
-<wire x1="35.31" y1="8.44" x2="35.31" y2="21.54" width="0.127" layer="21"/>
-<wire x1="35.31" y1="21.54" x2="33.71" y2="21.54" width="0.127" layer="21"/>
-<wire x1="33.71" y1="21.54" x2="33.71" y2="8.44" width="0.127" layer="21"/>
-<wire x1="30" y1="15" x2="32" y2="13" width="0" layer="20" curve="-90"/>
-<text x="1.27" y="33.02" size="1.27" layer="21">&gt;NAME</text>
-<text x="17.78" y="2.7" size="1.27" layer="21">JST CONN</text>
-<smd name="GND" x="18.51" y="30.37" dx="4" dy="2" layer="1"/>
-<smd name="VIN" x="27.49" y="30.37" dx="4" dy="2" layer="1"/>
-<pad name="6" x="0" y="2.78" drill="3.5" diameter="4.8" shape="octagon"/>
-<pad name="5" x="0" y="8.35" drill="3.5" diameter="4.8" shape="octagon"/>
-<pad name="4" x="0" y="13.92" drill="3.5" diameter="4.8" shape="octagon"/>
-<pad name="3" x="0" y="19.48" drill="3.5" diameter="4.8" shape="octagon"/>
-<pad name="2" x="0" y="25.05" drill="3.5" diameter="4.8" shape="octagon"/>
-<pad name="1" x="0" y="30.62" drill="3.5" diameter="4.8" shape="octagon"/>
-<pad name="7" x="46" y="2.78" drill="3.5" diameter="4.8" shape="octagon"/>
-<pad name="8" x="46" y="8.35" drill="3.5" diameter="4.8" shape="octagon"/>
-<pad name="9" x="46" y="13.92" drill="3.5" diameter="4.8" shape="octagon"/>
-<pad name="10" x="46" y="19.48" drill="3.5" diameter="4.8" shape="octagon"/>
-<pad name="11" x="46" y="25.05" drill="3.5" diameter="4.8" shape="octagon"/>
-<pad name="12" x="46" y="30.62" drill="3.5" diameter="4.8" shape="octagon"/>
-</package>
 <package name="8PI_CONNECTOR">
 <wire x1="0" y1="0" x2="10" y2="0" width="0.1524" layer="21"/>
 <wire x1="10" y1="0" x2="10" y2="4.25" width="0.1524" layer="21"/>
@@ -2115,13 +2011,6 @@ Warning: This is the KIT version of the AXIAL-0.1 package. This package has a sm
 <text x="-20.32" y="-2.54" size="1.778" layer="21" rot="R90">Board Boundaries</text>
 </package>
 </packages>
-<packages3d>
-<package3d name="LUMENIER_QUAD" urn="urn:adsk.eagle:package:24294694/3" locally_modified="yes" type="model">
-<packageinstances>
-<packageinstance name="LUMENIER_QUAD"/>
-</packageinstances>
-</package3d>
-</packages3d>
 <symbols>
 <symbol name="3PINCONNECTOR">
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
@@ -2132,27 +2021,6 @@ Warning: This is the KIT version of the AXIAL-0.1 package. This package has a sm
 <pin name="B" x="-12.7" y="0" length="middle"/>
 <pin name="C" x="-12.7" y="-5.08" length="middle"/>
 <text x="-7.62" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
-<symbol name="LUMENIER_QUAD">
-<pin name="M1P1" x="-17.78" y="7.62" length="middle"/>
-<pin name="M1P2" x="-17.78" y="5.08" length="middle"/>
-<pin name="M1P3" x="-17.78" y="2.54" length="middle"/>
-<pin name="M2P1" x="-17.78" y="-2.54" length="middle"/>
-<pin name="M2P2" x="-17.78" y="-5.08" length="middle"/>
-<pin name="M2P3" x="-17.78" y="-7.62" length="middle"/>
-<pin name="M3P1" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="M3P2" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="M3P3" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="M4P1" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="M4P2" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="M4P3" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="GND" x="0" y="-15.24" length="middle" rot="R90"/>
-<pin name="VIN" x="0" y="15.24" length="middle" rot="R270"/>
-<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
-<text x="-12.7" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="SAMTEC-CLT-106-01-X-DA">
 <wire x1="-6.096" y1="11.43" x2="6.584" y2="11.43" width="0.254" layer="94"/>
@@ -2200,37 +2068,6 @@ Warning: This is the KIT version of the AXIAL-0.1 package. This package has a sm
 <connect gate="G$1" pin="B" pad="B"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LUMENIER_QUAD">
-<gates>
-<gate name="G$1" symbol="LUMENIER_QUAD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LUMENIER_QUAD">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="M1P1" pad="1"/>
-<connect gate="G$1" pin="M1P2" pad="2"/>
-<connect gate="G$1" pin="M1P3" pad="3"/>
-<connect gate="G$1" pin="M2P1" pad="4"/>
-<connect gate="G$1" pin="M2P2" pad="5"/>
-<connect gate="G$1" pin="M2P3" pad="6"/>
-<connect gate="G$1" pin="M3P1" pad="12"/>
-<connect gate="G$1" pin="M3P2" pad="11"/>
-<connect gate="G$1" pin="M3P3" pad="10"/>
-<connect gate="G$1" pin="M4P1" pad="9"/>
-<connect gate="G$1" pin="M4P2" pad="8"/>
-<connect gate="G$1" pin="M4P3" pad="7"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:24294694/3"/>
-</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3259,7 +3096,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
 <part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
 <part name="GND15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="U$10" library="BLHeli_32 45A" deviceset="LUMENIER_QUAD" device="" package3d_urn="urn:adsk.eagle:package:24294694/3"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
@@ -3429,9 +3265,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND15" gate="GND" x="502.92" y="55.88" smashed="yes">
 <attribute name="VALUE" x="501.015" y="52.705" size="1.778" layer="96"/>
 </instance>
-<instance part="U$10" gate="G$1" x="127" y="38.1" smashed="yes">
-<attribute name="NAME" x="114.3" y="48.26" size="1.778" layer="95"/>
-</instance>
 <instance part="SUPPLY5" gate="GND" x="127" y="15.24" smashed="yes">
 <attribute name="VALUE" x="125.095" y="12.065" size="1.778" layer="96"/>
 </instance>
@@ -3576,7 +3409,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="497.84" y="60.96"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="GND"/>
 <wire x1="127" y1="22.86" x2="127" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 </segment>
@@ -3754,7 +3586,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="+12V" class="0">
 <segment>
-<pinref part="U$10" gate="G$1" pin="VIN"/>
 <wire x1="127" y1="53.34" x2="127" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+12V"/>
 </segment>
@@ -3886,7 +3717,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="20.32" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="M4P1"/>
 <wire x1="144.78" y1="35.56" x2="157.48" y2="35.56" width="0.1524" layer="91"/>
 <label x="154.94" y="35.56" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -3898,7 +3728,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="20.32" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="M4P2"/>
 <wire x1="144.78" y1="33.02" x2="157.48" y2="33.02" width="0.1524" layer="91"/>
 <label x="154.94" y="33.02" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -3910,7 +3739,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="20.32" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="M4P3"/>
 <wire x1="144.78" y1="30.48" x2="157.48" y2="30.48" width="0.1524" layer="91"/>
 <label x="154.94" y="30.48" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -3922,7 +3750,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="20.32" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="M3P1"/>
 <wire x1="144.78" y1="45.72" x2="157.48" y2="45.72" width="0.1524" layer="91"/>
 <label x="154.94" y="45.72" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -3934,7 +3761,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="20.32" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="M3P2"/>
 <wire x1="144.78" y1="43.18" x2="157.48" y2="43.18" width="0.1524" layer="91"/>
 <label x="154.94" y="43.18" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -3946,7 +3772,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="20.32" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="M3P3"/>
 <wire x1="144.78" y1="40.64" x2="157.48" y2="40.64" width="0.1524" layer="91"/>
 <label x="154.94" y="40.64" size="1.778" layer="95" align="bottom-right"/>
 </segment>
@@ -3958,7 +3783,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="20.32" y="137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="M2P1"/>
 <wire x1="109.22" y1="35.56" x2="96.52" y2="35.56" width="0.1524" layer="91"/>
 <label x="99.06" y="35.56" size="1.778" layer="95"/>
 </segment>
@@ -3970,7 +3794,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="20.32" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="M2P2"/>
 <wire x1="109.22" y1="33.02" x2="96.52" y2="33.02" width="0.1524" layer="91"/>
 <label x="99.06" y="33.02" size="1.778" layer="95"/>
 </segment>
@@ -3982,7 +3805,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="20.32" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="M2P3"/>
 <wire x1="109.22" y1="30.48" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
 <label x="99.06" y="30.48" size="1.778" layer="95"/>
 </segment>
@@ -3994,7 +3816,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="20.32" y="165.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="M1P1"/>
 <wire x1="109.22" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
 <label x="99.06" y="45.72" size="1.778" layer="95"/>
 </segment>
@@ -4006,7 +3827,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="20.32" y="160.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="M1P2"/>
 <wire x1="109.22" y1="43.18" x2="96.52" y2="43.18" width="0.1524" layer="91"/>
 <label x="99.06" y="43.18" size="1.778" layer="95"/>
 </segment>
@@ -4018,7 +3838,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="20.32" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$10" gate="G$1" pin="M1P3"/>
 <wire x1="109.22" y1="40.64" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
 <label x="99.06" y="40.64" size="1.778" layer="95"/>
 </segment>
