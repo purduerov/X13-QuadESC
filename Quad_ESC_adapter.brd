@@ -481,7 +481,7 @@
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="ECE_Senior_Design">
+<designrules name="ECE_Senior_Design *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -550,7 +550,7 @@ Please make sure your boards conform to these design rules.
 <param name="mlMaxStopFrame" value="3mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
+<param name="mlViaStopLimit" value="30mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -711,20 +711,20 @@ Please make sure your boards conform to these design rules.
 <vertex x="42.037" y="10.033"/>
 <vertex x="14.478" y="10.033"/>
 </polygon>
-<via x="15.113" y="38.735" extent="1-16" drill="0.6"/>
-<via x="14.986" y="36.449" extent="1-16" drill="0.6"/>
-<via x="16.256" y="37.719" extent="1-16" drill="0.6"/>
-<via x="16.256" y="35.56" extent="1-16" drill="0.6"/>
-<via x="18.034" y="38.481" extent="1-16" drill="0.6"/>
-<via x="18.034" y="36.449" extent="1-16" drill="0.6"/>
-<via x="19.304" y="37.465" extent="1-16" drill="0.6"/>
-<via x="19.304" y="35.687" extent="1-16" drill="0.6"/>
-<via x="24.13" y="37.973" extent="1-16" drill="0.6"/>
-<via x="25.654" y="37.973" extent="1-16" drill="0.6"/>
-<via x="24.13" y="36.195" extent="1-16" drill="0.6"/>
-<via x="25.654" y="36.195" extent="1-16" drill="0.6"/>
-<via x="24.13" y="34.417" extent="1-16" drill="0.6"/>
-<via x="25.654" y="34.417" extent="1-16" drill="0.6"/>
+<via x="15.113" y="38.735" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="14.986" y="36.449" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="16.256" y="37.719" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="16.256" y="35.56" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="18.034" y="38.481" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="18.034" y="36.449" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="19.304" y="37.465" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="19.304" y="35.687" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="24.13" y="37.973" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="25.654" y="37.973" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="24.13" y="36.195" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="25.654" y="36.195" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="24.13" y="34.417" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="25.654" y="34.417" extent="1-16" drill="0.6" alwaysstop="yes"/>
 <via x="24.13" y="32.385" extent="1-16" drill="0.6"/>
 <via x="25.654" y="32.385" extent="1-16" drill="0.6"/>
 <via x="24.13" y="30.607" extent="1-16" drill="0.6"/>
@@ -756,10 +756,22 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$2" pad="ESC4_P1@3"/>
 <contactref element="U$2" pad="ESC4_P1@1"/>
 <contactref element="U$2" pad="ESC4_P1@2"/>
-<wire x1="62.992" y1="13.208" x2="62.992" y2="15.748" width="0" layer="19" extent="1-1"/>
-<wire x1="60.452" y1="15.748" x2="62.992" y2="15.748" width="0" layer="19" extent="1-1"/>
-<wire x1="60.452" y1="13.208" x2="62.992" y2="13.208" width="0" layer="19" extent="1-1"/>
-<wire x1="56.033" y1="14.428" x2="60.452" y2="13.208" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
+<vertex x="66.294" y="16.891"/>
+<vertex x="52.07" y="16.891"/>
+<vertex x="52.07" y="11.811"/>
+<vertex x="58.42" y="11.811"/>
+<vertex x="58.801" y="12.192"/>
+<vertex x="66.294" y="12.192"/>
+</polygon>
+<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
+<vertex x="67.056" y="16.891"/>
+<vertex x="52.07" y="16.891"/>
+<vertex x="52.07" y="11.811"/>
+<vertex x="58.42" y="11.811"/>
+<vertex x="58.801" y="12.192"/>
+<vertex x="67.056" y="12.192"/>
+</polygon>
 </signal>
 <signal name="ESC4_Y">
 <contactref element="U$10" pad="8"/>
@@ -767,10 +779,26 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$2" pad="ESC4_P2@2"/>
 <contactref element="U$2" pad="ESC4_P2@4"/>
 <contactref element="U$2" pad="ESC4_P2@1"/>
-<wire x1="62.992" y1="8.128" x2="62.992" y2="10.668" width="0" layer="19" extent="1-1"/>
-<wire x1="60.452" y1="10.668" x2="62.992" y2="10.668" width="0" layer="19" extent="1-1"/>
-<wire x1="60.452" y1="8.128" x2="62.992" y2="8.128" width="0" layer="19" extent="1-1"/>
-<wire x1="56.033" y1="8.858" x2="60.452" y2="8.128" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
+<vertex x="66.167" y="6.985"/>
+<vertex x="66.167" y="11.684"/>
+<vertex x="59.055" y="11.684"/>
+<vertex x="58.801" y="11.43"/>
+<vertex x="51.816" y="11.43"/>
+<vertex x="51.816" y="6.223"/>
+<vertex x="58.547" y="6.223"/>
+<vertex x="59.309" y="6.985"/>
+</polygon>
+<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
+<vertex x="67.056" y="6.985"/>
+<vertex x="67.056" y="11.684"/>
+<vertex x="59.055" y="11.684"/>
+<vertex x="58.801" y="11.43"/>
+<vertex x="51.816" y="11.43"/>
+<vertex x="51.816" y="6.223"/>
+<vertex x="58.547" y="6.223"/>
+<vertex x="59.309" y="6.985"/>
+</polygon>
 </signal>
 <signal name="ESC4_R">
 <contactref element="U$10" pad="7"/>
@@ -778,10 +806,22 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$2" pad="ESC4_P3@1"/>
 <contactref element="U$2" pad="ESC4_P3@3"/>
 <contactref element="U$2" pad="ESC4_P3@4"/>
-<wire x1="60.452" y1="5.588" x2="62.992" y2="5.588" width="0" layer="19" extent="1-1"/>
-<wire x1="62.992" y1="3.048" x2="62.992" y2="5.588" width="0" layer="19" extent="1-1"/>
-<wire x1="60.452" y1="3.048" x2="60.452" y2="5.588" width="0" layer="19" extent="1-1"/>
-<wire x1="56.033" y1="3.288" x2="60.452" y2="3.048" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="52.578" y="5.842"/>
+<vertex x="58.674" y="5.842"/>
+<vertex x="59.436" y="6.604"/>
+<vertex x="66.167" y="6.604"/>
+<vertex x="66.167" y="0.127"/>
+<vertex x="52.578" y="0.127"/>
+</polygon>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="52.578" y="5.842"/>
+<vertex x="58.674" y="5.842"/>
+<vertex x="59.436" y="6.604"/>
+<vertex x="67.056" y="6.604"/>
+<vertex x="67.056" y="0.127"/>
+<vertex x="52.578" y="0.127"/>
+</polygon>
 </signal>
 <signal name="ESC3_B">
 <contactref element="U$10" pad="12"/>
@@ -789,10 +829,22 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$2" pad="ESC3_P1@3"/>
 <contactref element="U$2" pad="ESC3_P1@2"/>
 <contactref element="U$2" pad="ESC3_P1@1"/>
-<wire x1="62.992" y1="28.448" x2="62.992" y2="30.988" width="0" layer="19" extent="1-1"/>
-<wire x1="60.452" y1="30.988" x2="62.992" y2="30.988" width="0" layer="19" extent="1-1"/>
-<wire x1="60.452" y1="28.448" x2="62.992" y2="28.448" width="0" layer="19" extent="1-1"/>
-<wire x1="56.033" y1="31.128" x2="60.452" y2="30.988" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
+<vertex x="66.167" y="27.305"/>
+<vertex x="59.182" y="27.305"/>
+<vertex x="57.912" y="28.575"/>
+<vertex x="51.943" y="28.575"/>
+<vertex x="51.943" y="33.909"/>
+<vertex x="66.167" y="33.909"/>
+</polygon>
+<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
+<vertex x="67.056" y="27.305"/>
+<vertex x="59.182" y="27.305"/>
+<vertex x="57.912" y="28.575"/>
+<vertex x="51.943" y="28.575"/>
+<vertex x="51.943" y="33.909"/>
+<vertex x="67.056" y="33.909"/>
+</polygon>
 </signal>
 <signal name="ESC3_Y">
 <contactref element="U$10" pad="11"/>
@@ -800,10 +852,26 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$2" pad="ESC3_P2@4"/>
 <contactref element="U$2" pad="ESC3_P2@2"/>
 <contactref element="U$2" pad="ESC3_P2@1"/>
-<wire x1="62.992" y1="23.368" x2="62.992" y2="25.908" width="0" layer="19" extent="1-1"/>
-<wire x1="60.452" y1="25.908" x2="62.992" y2="25.908" width="0" layer="19" extent="1-1"/>
-<wire x1="60.452" y1="23.368" x2="62.992" y2="23.368" width="0" layer="19" extent="1-1"/>
-<wire x1="56.033" y1="25.558" x2="60.452" y2="25.908" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
+<vertex x="66.294" y="26.924"/>
+<vertex x="58.547" y="26.924"/>
+<vertex x="57.404" y="28.067"/>
+<vertex x="51.943" y="28.067"/>
+<vertex x="51.943" y="22.86"/>
+<vertex x="58.674" y="22.86"/>
+<vertex x="59.182" y="22.352"/>
+<vertex x="66.294" y="22.352"/>
+</polygon>
+<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
+<vertex x="67.056" y="26.924"/>
+<vertex x="58.547" y="26.924"/>
+<vertex x="57.404" y="28.067"/>
+<vertex x="51.943" y="28.067"/>
+<vertex x="51.943" y="22.86"/>
+<vertex x="58.674" y="22.86"/>
+<vertex x="59.182" y="22.352"/>
+<vertex x="67.056" y="22.352"/>
+</polygon>
 </signal>
 <signal name="ESC3_R">
 <contactref element="U$10" pad="10"/>
@@ -811,10 +879,22 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$2" pad="ESC3_P3@3"/>
 <contactref element="U$2" pad="ESC3_P3@1"/>
 <contactref element="U$2" pad="ESC3_P3@2"/>
-<wire x1="62.992" y1="18.288" x2="62.992" y2="20.828" width="0" layer="19" extent="1-1"/>
-<wire x1="60.452" y1="20.828" x2="62.992" y2="20.828" width="0" layer="19" extent="1-1"/>
-<wire x1="60.452" y1="18.288" x2="62.992" y2="18.288" width="0" layer="19" extent="1-1"/>
-<wire x1="56.033" y1="19.988" x2="60.452" y2="20.828" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
+<vertex x="66.294" y="21.971"/>
+<vertex x="58.928" y="21.971"/>
+<vertex x="58.42" y="22.479"/>
+<vertex x="51.689" y="22.479"/>
+<vertex x="51.689" y="17.272"/>
+<vertex x="66.294" y="17.272"/>
+</polygon>
+<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
+<vertex x="67.056" y="21.971"/>
+<vertex x="58.928" y="21.971"/>
+<vertex x="58.42" y="22.479"/>
+<vertex x="51.689" y="22.479"/>
+<vertex x="51.689" y="17.272"/>
+<vertex x="67.056" y="17.272"/>
+</polygon>
 </signal>
 <signal name="ESC2_B">
 <contactref element="U$10" pad="4"/>
@@ -830,6 +910,14 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$2" pad="ESC2_P1@4"/>
 <contactref element="U$2" pad="ESC2_P1@3"/>
 <contactref element="U$2" pad="ESC2_P1@1"/>
+<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
+<vertex x="-1.524" y="16.891"/>
+<vertex x="13.462" y="16.891"/>
+<vertex x="13.462" y="11.811"/>
+<vertex x="7.112" y="11.811"/>
+<vertex x="6.731" y="12.192"/>
+<vertex x="-1.524" y="12.192"/>
+</polygon>
 </signal>
 <signal name="ESC2_Y">
 <contactref element="U$10" pad="5"/>
@@ -847,6 +935,16 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$2" pad="ESC2_P2@1"/>
 <contactref element="U$2" pad="ESC2_P2@2"/>
 <contactref element="U$2" pad="ESC2_P2@4"/>
+<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
+<vertex x="-1.524" y="6.985"/>
+<vertex x="-1.524" y="11.684"/>
+<vertex x="6.477" y="11.684"/>
+<vertex x="6.731" y="11.43"/>
+<vertex x="13.716" y="11.43"/>
+<vertex x="13.716" y="6.223"/>
+<vertex x="6.985" y="6.223"/>
+<vertex x="6.223" y="6.985"/>
+</polygon>
 </signal>
 <signal name="ESC2_R">
 <contactref element="U$10" pad="6"/>
@@ -862,6 +960,14 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$2" pad="ESC2_P3@1"/>
 <contactref element="U$2" pad="ESC2_P3@2"/>
 <contactref element="U$2" pad="ESC2_P3@3"/>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="12.954" y="5.842"/>
+<vertex x="6.858" y="5.842"/>
+<vertex x="6.096" y="6.604"/>
+<vertex x="-1.524" y="6.604"/>
+<vertex x="-1.524" y="0.127"/>
+<vertex x="12.954" y="0.127"/>
+</polygon>
 </signal>
 <signal name="ESC1_B">
 <contactref element="U$10" pad="1"/>
@@ -877,6 +983,14 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$2" pad="ESC1_P1@1"/>
 <contactref element="U$2" pad="ESC1_P1@2"/>
 <contactref element="U$2" pad="ESC1_P1@3"/>
+<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
+<vertex x="-1.524" y="27.305"/>
+<vertex x="6.35" y="27.305"/>
+<vertex x="7.62" y="28.575"/>
+<vertex x="13.589" y="28.575"/>
+<vertex x="13.589" y="33.909"/>
+<vertex x="-1.524" y="33.909"/>
+</polygon>
 </signal>
 <signal name="ESC1_Y">
 <contactref element="U$10" pad="2"/>
@@ -894,6 +1008,16 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$2" pad="ESC1_P2@4"/>
 <contactref element="U$2" pad="ESC1_P2@1"/>
 <contactref element="U$2" pad="ESC1_P2@2"/>
+<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
+<vertex x="-1.524" y="26.924"/>
+<vertex x="6.985" y="26.924"/>
+<vertex x="8.128" y="28.067"/>
+<vertex x="13.589" y="28.067"/>
+<vertex x="13.589" y="22.86"/>
+<vertex x="6.858" y="22.86"/>
+<vertex x="6.35" y="22.352"/>
+<vertex x="-1.524" y="22.352"/>
+</polygon>
 </signal>
 <signal name="ESC1_R">
 <contactref element="U$10" pad="3"/>
@@ -909,6 +1033,14 @@ Please make sure your boards conform to these design rules.
 <contactref element="U$2" pad="ESC1_P3@3"/>
 <contactref element="U$2" pad="ESC1_P3@2"/>
 <contactref element="U$2" pad="ESC1_P3@4"/>
+<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
+<vertex x="-1.524" y="21.971"/>
+<vertex x="6.604" y="21.971"/>
+<vertex x="7.112" y="22.479"/>
+<vertex x="13.843" y="22.479"/>
+<vertex x="13.843" y="17.272"/>
+<vertex x="-1.524" y="17.272"/>
+</polygon>
 </signal>
 <signal name="12V">
 <contactref element="U$10" pad="VIN"/>
@@ -921,7 +1053,9 @@ Please make sure your boards conform to these design rules.
 <vertex x="32.639" y="25.146"/>
 <vertex x="32.639" y="40.894"/>
 <vertex x="51.181" y="40.894"/>
-<vertex x="51.181" y="-1.651"/>
+<vertex x="51.181" y="35.433"/>
+<vertex x="47.752" y="35.433"/>
+<vertex x="47.752" y="-1.651"/>
 <vertex x="18.923" y="-1.651"/>
 </polygon>
 <polygon width="0.508" layer="16" isolate="0.254">
@@ -930,27 +1064,29 @@ Please make sure your boards conform to these design rules.
 <vertex x="45.974" y="-0.889"/>
 <vertex x="21.082" y="-0.889"/>
 </polygon>
-<via x="23.749" y="3.175" extent="1-16" drill="0.6"/>
+<via x="23.749" y="3.175" extent="1-16" drill="0.6" alwaysstop="yes"/>
 <polygon width="0.6096" layer="16" isolate="0.254">
 <vertex x="30.48" y="40.132"/>
 <vertex x="51.562" y="40.132"/>
-<vertex x="51.562" y="20.701"/>
+<vertex x="51.562" y="34.972625"/>
+<vertex x="47.498" y="29.638625"/>
+<vertex x="47.498" y="20.701"/>
 <vertex x="37.084" y="20.701"/>
 <vertex x="37.084" y="30.734"/>
 <vertex x="30.48" y="30.734"/>
 </polygon>
 <via x="22.479" y="5.461" extent="1-16" drill="0.6"/>
-<via x="25.273" y="1.651" extent="1-16" drill="0.6"/>
+<via x="25.273" y="1.397" extent="1-16" drill="0.6" alwaysstop="yes"/>
 <via x="26.67" y="3.048" extent="1-16" drill="0.6"/>
-<via x="28.194" y="1.397" extent="1-16" drill="0.6"/>
+<via x="28.194" y="1.397" extent="1-16" drill="0.6" alwaysstop="yes"/>
 <via x="29.464" y="2.921" extent="1-16" drill="0.6"/>
-<via x="31.115" y="1.397" extent="1-16" drill="0.6"/>
+<via x="31.115" y="1.397" extent="1-16" drill="0.6" alwaysstop="yes"/>
 <via x="32.258" y="2.921" extent="1-16" drill="0.6"/>
-<via x="33.909" y="1.524" extent="1-16" drill="0.6"/>
+<via x="33.909" y="1.397" extent="1-16" drill="0.6" alwaysstop="yes"/>
 <via x="35.306" y="3.048" extent="1-16" drill="0.6"/>
-<via x="36.83" y="1.651" extent="1-16" drill="0.6"/>
+<via x="36.83" y="1.397" extent="1-16" drill="0.6" alwaysstop="yes"/>
 <via x="38.608" y="2.921" extent="1-16" drill="0.6"/>
-<via x="40.132" y="1.651" extent="1-16" drill="0.6"/>
+<via x="40.132" y="1.397" extent="1-16" drill="0.6" alwaysstop="yes"/>
 <via x="41.529" y="3.175" extent="1-16" drill="0.6"/>
 <via x="43.18" y="5.715" extent="1-16" drill="0.6"/>
 <polygon width="0.508" layer="1" isolate="0.254">
@@ -962,14 +1098,14 @@ Please make sure your boards conform to these design rules.
 </polygon>
 <via x="43.307" y="27.686" extent="1-16" drill="0.6"/>
 <via x="43.307" y="29.972" extent="1-16" drill="0.6"/>
-<via x="46.101" y="36.068" extent="1-16" drill="0.6"/>
-<via x="46.101" y="38.1" extent="1-16" drill="0.6"/>
-<via x="47.625" y="35.56" extent="1-16" drill="0.6"/>
-<via x="47.625" y="37.338" extent="1-16" drill="0.6"/>
-<via x="49.149" y="38.354" extent="1-16" drill="0.6"/>
-<via x="49.149" y="36.322" extent="1-16" drill="0.6"/>
-<via x="50.673" y="35.56" extent="1-16" drill="0.6"/>
-<via x="50.673" y="37.338" extent="1-16" drill="0.6"/>
+<via x="46.101" y="36.068" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="46.101" y="38.1" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="47.625" y="35.56" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="47.625" y="37.338" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="49.149" y="38.354" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="49.149" y="36.322" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="50.673" y="35.56" extent="1-16" drill="0.6" alwaysstop="yes"/>
+<via x="50.673" y="37.338" extent="1-16" drill="0.6" alwaysstop="yes"/>
 <via x="43.815" y="36.068" extent="1-16" drill="0.6"/>
 <via x="43.815" y="34.544" extent="1-16" drill="0.6"/>
 <via x="32.639" y="36.068" extent="1-16" drill="0.6"/>
