@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -158,12 +158,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="65.786" y2="0" width="0" layer="20"/>
-<wire x1="65.786" y1="0" x2="65.786" y2="33.274" width="0" layer="20"/>
-<wire x1="65.786" y1="33.274" x2="59.436" y2="39.624" width="0" layer="20"/>
-<wire x1="59.436" y1="39.624" x2="6.604" y2="39.624" width="0" layer="20"/>
-<wire x1="6.604" y1="39.624" x2="0" y2="33.02" width="0" layer="20"/>
-<wire x1="0" y1="33.02" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="-17.78" y1="0" x2="83.82" y2="0" width="0" layer="20"/>
+<wire x1="83.82" y1="0" x2="83.82" y2="39.624" width="0" layer="20"/>
+<wire x1="83.82" y1="39.624" x2="-17.78" y2="39.624" width="0" layer="20"/>
+<wire x1="-17.78" y1="39.624" x2="-17.78" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="BLHeli_32 45A">
@@ -304,111 +302,58 @@
 </package3d>
 </packages3d>
 </library>
-<library name="Backplane_ESC_adapter" urn="urn:adsk.eagle:library:25779240">
+<library name="ThrusterConnector">
 <packages>
-<package name="BACKPLANE_ESC_ADAPTER_ESC" urn="urn:adsk.eagle:footprint:25779243/2" library_version="4">
-<pad name="ESC2_P3@4" x="4.826" y="3.048" drill="1.016" diameter="1.8796"/>
-<pad name="ESC2_P3@3" x="2.286" y="3.048" drill="1.016" diameter="1.8796"/>
-<pad name="ESC2_P3@2" x="4.826" y="5.588" drill="1.016" diameter="1.8796"/>
-<pad name="ESC2_P3@1" x="2.286" y="5.588" drill="1.016" diameter="1.8796"/>
-<pad name="ESC2_P2@4" x="4.826" y="8.128" drill="1.016" diameter="1.8796"/>
-<pad name="ESC2_P2@3" x="2.286" y="8.128" drill="1.016" diameter="1.8796"/>
-<pad name="ESC2_P2@2" x="4.826" y="10.668" drill="1.016" diameter="1.8796"/>
-<pad name="ESC2_P2@1" x="2.286" y="10.668" drill="1.016" diameter="1.8796"/>
-<pad name="ESC2_P1@4" x="4.826" y="13.208" drill="1.016" diameter="1.8796"/>
-<pad name="ESC2_P1@3" x="2.286" y="13.208" drill="1.016" diameter="1.8796"/>
-<pad name="ESC2_P1@2" x="4.826" y="15.748" drill="1.016" diameter="1.8796"/>
-<pad name="ESC2_P1@1" x="2.286" y="15.748" drill="1.016" diameter="1.8796"/>
-<pad name="ESC1_P3@4" x="4.826" y="18.288" drill="1.016" diameter="1.8796"/>
-<pad name="ESC1_P3@3" x="2.286" y="18.288" drill="1.016" diameter="1.8796"/>
-<pad name="ESC1_P3@2" x="4.826" y="20.828" drill="1.016" diameter="1.8796"/>
-<pad name="ESC1_P3@1" x="2.286" y="20.828" drill="1.016" diameter="1.8796"/>
-<pad name="ESC1_P2@4" x="4.826" y="23.368" drill="1.016" diameter="1.8796"/>
-<pad name="ESC1_P2@3" x="2.286" y="23.368" drill="1.016" diameter="1.8796"/>
-<pad name="ESC1_P2@2" x="4.826" y="25.908" drill="1.016" diameter="1.8796"/>
-<pad name="ESC1_P2@1" x="2.286" y="25.908" drill="1.016" diameter="1.8796"/>
-<pad name="ESC1_P1@4" x="4.826" y="28.448" drill="1.016" diameter="1.8796"/>
-<pad name="ESC1_P1@3" x="2.286" y="28.448" drill="1.016" diameter="1.8796"/>
-<pad name="ESC1_P1@2" x="4.826" y="30.988" drill="1.016" diameter="1.8796"/>
-<pad name="ESC1_P1@1" x="2.286" y="30.988" drill="1.016" diameter="1.8796"/>
-<pad name="ESC4_P3@4" x="62.992" y="3.048" drill="1.016" diameter="1.8796"/>
-<pad name="ESC4_P3@3" x="60.452" y="3.048" drill="1.016" diameter="1.8796"/>
-<pad name="ESC4_P3@2" x="62.992" y="5.588" drill="1.016" diameter="1.8796"/>
-<pad name="ESC4_P3@1" x="60.452" y="5.588" drill="1.016" diameter="1.8796"/>
-<pad name="ESC4_P2@4" x="62.992" y="8.128" drill="1.016" diameter="1.8796"/>
-<pad name="ESC4_P2@3" x="60.452" y="8.128" drill="1.016" diameter="1.8796"/>
-<pad name="ESC4_P2@2" x="62.992" y="10.668" drill="1.016" diameter="1.8796"/>
-<pad name="ESC4_P2@1" x="60.452" y="10.668" drill="1.016" diameter="1.8796"/>
-<pad name="ESC4_P1@4" x="62.992" y="13.208" drill="1.016" diameter="1.8796"/>
-<pad name="ESC4_P1@3" x="60.452" y="13.208" drill="1.016" diameter="1.8796"/>
-<pad name="ESC4_P1@2" x="62.992" y="15.748" drill="1.016" diameter="1.8796"/>
-<pad name="ESC4_P1@1" x="60.452" y="15.748" drill="1.016" diameter="1.8796"/>
-<pad name="ESC3_P3@4" x="62.992" y="18.288" drill="1.016" diameter="1.8796"/>
-<pad name="ESC3_P3@3" x="60.452" y="18.288" drill="1.016" diameter="1.8796"/>
-<pad name="ESC3_P3@2" x="62.992" y="20.828" drill="1.016" diameter="1.8796"/>
-<pad name="ESC3_P3@1" x="60.452" y="20.828" drill="1.016" diameter="1.8796"/>
-<pad name="ESC3_P2@4" x="62.992" y="23.368" drill="1.016" diameter="1.8796"/>
-<pad name="ESC3_P2@3" x="60.452" y="23.368" drill="1.016" diameter="1.8796"/>
-<pad name="ESC3_P2@2" x="62.992" y="25.908" drill="1.016" diameter="1.8796"/>
-<pad name="ESC3_P2@1" x="60.452" y="25.908" drill="1.016" diameter="1.8796"/>
-<pad name="ESC3_P1@4" x="62.992" y="28.448" drill="1.016" diameter="1.8796"/>
-<pad name="ESC3_P1@3" x="60.452" y="28.448" drill="1.016" diameter="1.8796"/>
-<pad name="ESC3_P1@2" x="62.992" y="30.988" drill="1.016" diameter="1.8796"/>
-<pad name="ESC3_P1@1" x="60.452" y="30.988" drill="1.016" diameter="1.8796"/>
-<rectangle x1="4.572" y1="2.794" x2="5.08" y2="3.302" layer="51"/>
-<rectangle x1="2.032" y1="2.794" x2="2.54" y2="3.302" layer="51"/>
-<rectangle x1="2.032" y1="5.334" x2="2.54" y2="5.842" layer="51"/>
-<rectangle x1="4.572" y1="5.334" x2="5.08" y2="5.842" layer="51"/>
-<rectangle x1="2.032" y1="7.874" x2="2.54" y2="8.382" layer="51"/>
-<rectangle x1="4.572" y1="7.874" x2="5.08" y2="8.382" layer="51"/>
-<rectangle x1="4.572" y1="10.414" x2="5.08" y2="10.922" layer="51"/>
-<rectangle x1="2.032" y1="10.414" x2="2.54" y2="10.922" layer="51"/>
-<rectangle x1="2.032" y1="12.954" x2="2.54" y2="13.462" layer="51"/>
-<rectangle x1="4.572" y1="12.954" x2="5.08" y2="13.462" layer="51"/>
-<rectangle x1="2.032" y1="15.494" x2="2.54" y2="16.002" layer="51"/>
-<rectangle x1="4.572" y1="15.494" x2="5.08" y2="16.002" layer="51"/>
-<rectangle x1="4.572" y1="18.034" x2="5.08" y2="18.542" layer="51"/>
-<rectangle x1="2.032" y1="18.034" x2="2.54" y2="18.542" layer="51"/>
-<rectangle x1="2.032" y1="20.574" x2="2.54" y2="21.082" layer="51"/>
-<rectangle x1="4.572" y1="20.574" x2="5.08" y2="21.082" layer="51"/>
-<rectangle x1="2.032" y1="23.114" x2="2.54" y2="23.622" layer="51"/>
-<rectangle x1="4.572" y1="23.114" x2="5.08" y2="23.622" layer="51"/>
-<rectangle x1="4.572" y1="25.654" x2="5.08" y2="26.162" layer="51"/>
-<rectangle x1="2.032" y1="25.654" x2="2.54" y2="26.162" layer="51"/>
-<rectangle x1="2.032" y1="28.194" x2="2.54" y2="28.702" layer="51"/>
-<rectangle x1="4.572" y1="28.194" x2="5.08" y2="28.702" layer="51"/>
-<rectangle x1="2.032" y1="30.734" x2="2.54" y2="31.242" layer="51"/>
-<rectangle x1="4.572" y1="30.734" x2="5.08" y2="31.242" layer="51"/>
-<rectangle x1="62.738" y1="2.794" x2="63.246" y2="3.302" layer="51"/>
-<rectangle x1="60.198" y1="2.794" x2="60.706" y2="3.302" layer="51"/>
-<rectangle x1="60.198" y1="5.334" x2="60.706" y2="5.842" layer="51"/>
-<rectangle x1="62.738" y1="5.334" x2="63.246" y2="5.842" layer="51"/>
-<rectangle x1="60.198" y1="7.874" x2="60.706" y2="8.382" layer="51"/>
-<rectangle x1="62.738" y1="7.874" x2="63.246" y2="8.382" layer="51"/>
-<rectangle x1="62.738" y1="10.414" x2="63.246" y2="10.922" layer="51"/>
-<rectangle x1="60.198" y1="10.414" x2="60.706" y2="10.922" layer="51"/>
-<rectangle x1="60.198" y1="12.954" x2="60.706" y2="13.462" layer="51"/>
-<rectangle x1="62.738" y1="12.954" x2="63.246" y2="13.462" layer="51"/>
-<rectangle x1="60.198" y1="15.494" x2="60.706" y2="16.002" layer="51"/>
-<rectangle x1="62.738" y1="15.494" x2="63.246" y2="16.002" layer="51"/>
-<rectangle x1="62.738" y1="18.034" x2="63.246" y2="18.542" layer="51"/>
-<rectangle x1="60.198" y1="18.034" x2="60.706" y2="18.542" layer="51"/>
-<rectangle x1="60.198" y1="20.574" x2="60.706" y2="21.082" layer="51"/>
-<rectangle x1="62.738" y1="20.574" x2="63.246" y2="21.082" layer="51"/>
-<rectangle x1="60.198" y1="23.114" x2="60.706" y2="23.622" layer="51"/>
-<rectangle x1="62.738" y1="23.114" x2="63.246" y2="23.622" layer="51"/>
-<rectangle x1="62.738" y1="25.654" x2="63.246" y2="26.162" layer="51"/>
-<rectangle x1="60.198" y1="25.654" x2="60.706" y2="26.162" layer="51"/>
-<rectangle x1="60.198" y1="28.194" x2="60.706" y2="28.702" layer="51"/>
-<rectangle x1="62.738" y1="28.194" x2="63.246" y2="28.702" layer="51"/>
-<rectangle x1="60.198" y1="30.734" x2="60.706" y2="31.242" layer="51"/>
-<rectangle x1="62.738" y1="30.734" x2="63.246" y2="31.242" layer="51"/>
-<wire x1="0" y1="0" x2="65.786" y2="0" width="0" layer="52"/>
-<wire x1="65.786" y1="0" x2="65.786" y2="33.274" width="0" layer="52"/>
-<wire x1="65.786" y1="33.274" x2="59.436" y2="39.624" width="0" layer="52"/>
-<wire x1="59.436" y1="39.624" x2="6.604" y2="39.624" width="0" layer="52"/>
-<wire x1="6.604" y1="39.624" x2="0" y2="33.02" width="0" layer="52"/>
-<wire x1="0" y1="33.02" x2="0" y2="0" width="0" layer="52"/>
+<package name="284512-3" urn="urn:adsk.eagle:footprint:25824885/1">
+<pad name="1" x="0" y="3.5" drill="1.2" diameter="2.2"/>
+<pad name="2" x="0" y="0" drill="1.2" diameter="2.2"/>
+<pad name="3" x="0" y="-3.5" drill="1.2" diameter="2.2"/>
+<wire x1="-1.2" y1="6.25" x2="-1.2" y2="-6.25" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="-6.25" x2="8" y2="-6.25" width="0.127" layer="21"/>
+<wire x1="8" y1="-6.25" x2="8" y2="6.25" width="0.127" layer="21"/>
+<wire x1="8" y1="6.25" x2="-1.2" y2="6.25" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="6.4" x2="8.2" y2="6.4" width="0.127" layer="39"/>
+<wire x1="8.2" y1="6.4" x2="8.2" y2="-6.4" width="0.127" layer="39"/>
+<wire x1="8.2" y1="-6.4" x2="-1.4" y2="-6.4" width="0.127" layer="39"/>
+<wire x1="-1.4" y1="-6.4" x2="-1.4" y2="6.4" width="0.127" layer="39"/>
+<text x="3.6" y="-2.6" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="284512-3" urn="urn:adsk.eagle:package:25824887/2" type="model">
+<packageinstances>
+<packageinstance name="284512-3"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="Mounting Holes">
+<packages>
+<package name="6-32-HOLE" urn="urn:adsk.eagle:footprint:24384747/1">
+<circle x="0" y="0" radius="3.175" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="2.159" width="0.127" layer="41"/>
+<circle x="0" y="0" radius="3.175" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="2.159" width="0.127" layer="42"/>
+<text x="0" y="2.286" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.286" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<hole x="0" y="0" drill="3.81"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="STAND-OFF" urn="urn:adsk.eagle:package:24384748/2" type="empty">
+<packageinstances>
+<packageinstance name="6-32-HOLE"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
+<library name="Backplane_ESC_adapter">
+<packages>
+<package name="BACKPLANE_ESC_ADAPTER_ESC_PWR">
+<wire x1="-17.78" y1="0" x2="83.82" y2="0" width="0" layer="52"/>
+<wire x1="83.82" y1="0" x2="83.82" y2="39.624" width="0" layer="52"/>
+<wire x1="83.82" y1="39.624" x2="-17.78" y2="39.624" width="0" layer="52"/>
+<wire x1="-17.78" y1="39.624" x2="-17.78" y2="0" width="0" layer="52"/>
 <wire x1="27.302" y1="39.56" x2="22.352" y2="39.56" width="0.1" layer="52"/>
 <wire x1="22.352" y1="39.56" x2="22.352" y2="23.94" width="0.1" layer="52"/>
 <wire x1="22.352" y1="23.94" x2="27.302" y2="23.94" width="0.1" layer="52"/>
@@ -464,13 +409,6 @@
 <text x="1.27" y="33.02" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
-<packages3d>
-<package3d name="BACKPLANE_ESC_ADAPTER_ESC" urn="urn:adsk.eagle:package:25779247/3" type="model" library_version="4">
-<packageinstances>
-<packageinstance name="BACKPLANE_ESC_ADAPTER_ESC"/>
-</packageinstances>
-</package3d>
-</packages3d>
 </library>
 </libraries>
 <attributes>
@@ -683,7 +621,27 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="37.084" y="30.226" size="1.27" layer="26" rot="MR0" align="bottom-center"/>
 <attribute name="VALUE" x="37.084" y="25.146" size="1.27" layer="28" rot="MR0" align="top-center"/>
 </element>
-<element name="U$2" library="Backplane_ESC_adapter" library_urn="urn:adsk.eagle:library:25779240" package="BACKPLANE_ESC_ADAPTER_ESC" package3d_urn="urn:adsk.eagle:package:25779247/3" value="BACKPLANE_ESC_ADAPTER_ESC" x="0" y="0" smashed="yes">
+<element name="J1" library="ThrusterConnector" package="284512-3" package3d_urn="urn:adsk.eagle:package:25824887/2" value="284512-3" x="-9.398" y="26.416" smashed="yes" rot="MR0"/>
+<element name="J4" library="ThrusterConnector" package="284512-3" package3d_urn="urn:adsk.eagle:package:25824887/2" value="284512-3" x="75.692" y="6.604" smashed="yes" rot="MR180"/>
+<element name="J3" library="ThrusterConnector" package="284512-3" package3d_urn="urn:adsk.eagle:package:25824887/2" value="284512-3" x="75.692" y="26.416" smashed="yes" rot="MR180"/>
+<element name="J2" library="ThrusterConnector" package="284512-3" package3d_urn="urn:adsk.eagle:package:25824887/2" value="284512-3" x="-9.652" y="6.604" smashed="yes" rot="MR0"/>
+<element name="H1" library="Mounting Holes" package="6-32-HOLE" package3d_urn="urn:adsk.eagle:package:24384748/2" value="6-32-HOLE" x="-14.478" y="36.322" smashed="yes">
+<attribute name="NAME" x="-14.478" y="38.608" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="-14.478" y="34.036" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="H2" library="Mounting Holes" package="6-32-HOLE" package3d_urn="urn:adsk.eagle:package:24384748/2" value="6-32-HOLE" x="80.518" y="36.322" smashed="yes">
+<attribute name="NAME" x="80.518" y="38.608" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="80.518" y="34.036" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="H3" library="Mounting Holes" package="6-32-HOLE" package3d_urn="urn:adsk.eagle:package:24384748/2" value="6-32-HOLE" x="-14.478" y="16.51" smashed="yes">
+<attribute name="NAME" x="-14.478" y="18.796" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="-14.478" y="14.224" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="H4" library="Mounting Holes" package="6-32-HOLE" package3d_urn="urn:adsk.eagle:package:24384748/2" value="6-32-HOLE" x="80.01" y="16.51" smashed="yes">
+<attribute name="NAME" x="80.01" y="18.796" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="80.01" y="14.224" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
+<element name="U$1" library="Backplane_ESC_adapter" package="BACKPLANE_ESC_ADAPTER_ESC_PWR" value="BACKPLANE_ESC_ADAPTER_ESC_PWR" x="0" y="0" smashed="yes">
 <attribute name="NAME" x="1.27" y="33.02" size="1.27" layer="25"/>
 </element>
 </elements>
@@ -730,316 +688,389 @@ Please make sure your boards conform to these design rules.
 <via x="24.13" y="30.607" extent="1-16" drill="0.6"/>
 <via x="24.13" y="28.575" extent="1-16" drill="0.6"/>
 <via x="25.4" y="29.083" extent="1-16" drill="0.6"/>
-<contactref element="U$2" pad="GND@4"/>
-<contactref element="U$2" pad="GND@12"/>
-<contactref element="U$2" pad="GND@9"/>
-<contactref element="U$2" pad="GND@11"/>
-<contactref element="U$2" pad="GND@8"/>
-<contactref element="U$2" pad="GND@1"/>
-<contactref element="U$2" pad="GND@3"/>
-<contactref element="U$2" pad="GND@6"/>
-<contactref element="U$2" pad="GND@10"/>
-<contactref element="U$2" pad="GND@7"/>
-<contactref element="U$2" pad="GND@2"/>
-<contactref element="U$2" pad="GND@5"/>
-<wire x1="21.968" y1="25.4" x2="22.222" y2="24.143" width="0.508" layer="16"/>
-<wire x1="22.296028125" y1="24.143" x2="22.302984375" y2="24.13604375" width="0.508" layer="16"/>
-<wire x1="22.302984375" y1="24.13604375" x2="22.33725625" y2="24.13" width="0.508" layer="16"/>
-<wire x1="22.33725625" y1="24.13" x2="22.352" y2="24.13" width="0.508" layer="16"/>
-<wire x1="22.222" y1="24.143" x2="22.296028125" y2="24.143" width="0.508" layer="16"/>
-<wire x1="22.352" y1="24.13" x2="22.35515625" y2="24.12684375" width="0.508" layer="16"/>
-<wire x1="22.35515625" y1="24.12684375" x2="22.641334375" y2="24.07638125" width="0.508" layer="16"/>
+<contactref element="U$1" pad="GND@4"/>
+<contactref element="U$1" pad="GND@2"/>
+<contactref element="U$1" pad="GND@5"/>
+<contactref element="U$1" pad="GND@7"/>
+<contactref element="U$1" pad="GND@12"/>
+<contactref element="U$1" pad="GND@1"/>
+<contactref element="U$1" pad="GND@11"/>
+<contactref element="U$1" pad="GND@9"/>
+<contactref element="U$1" pad="GND@8"/>
+<contactref element="U$1" pad="GND@3"/>
+<contactref element="U$1" pad="GND@6"/>
+<contactref element="U$1" pad="GND@10"/>
 </signal>
 <signal name="ESC4_B">
 <contactref element="U$10" pad="9"/>
-<contactref element="U$2" pad="ESC4_P1@4"/>
-<contactref element="U$2" pad="ESC4_P1@3"/>
-<contactref element="U$2" pad="ESC4_P1@1"/>
-<contactref element="U$2" pad="ESC4_P1@2"/>
-<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
-<vertex x="66.294" y="16.891"/>
-<vertex x="52.07" y="16.891"/>
-<vertex x="52.07" y="11.811"/>
-<vertex x="58.42" y="11.811"/>
-<vertex x="58.801" y="12.192"/>
-<vertex x="66.294" y="12.192"/>
+<contactref element="J4" pad="3"/>
+<polygon width="1.016" layer="1" isolate="0.3048">
+<vertex x="59.309" y="16.383"/>
+<vertex x="86.106" y="16.383"/>
+<vertex x="86.106" y="9.906"/>
+<vertex x="74.93" y="9.906"/>
+<vertex x="74.93" y="12.573"/>
+<vertex x="59.309" y="12.573"/>
 </polygon>
-<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
-<vertex x="67.056" y="16.891"/>
-<vertex x="52.07" y="16.891"/>
-<vertex x="52.07" y="11.811"/>
-<vertex x="58.42" y="11.811"/>
-<vertex x="58.801" y="12.192"/>
-<vertex x="67.056" y="12.192"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="60.579" y="15.621"/>
+<vertex x="55.88" y="15.621"/>
+<vertex x="55.88" y="13.208"/>
+<vertex x="60.579" y="13.208"/>
+</polygon>
+<polygon width="1.016" layer="16" isolate="0.3048">
+<vertex x="59.309" y="16.383"/>
+<vertex x="86.868" y="16.383"/>
+<vertex x="86.868" y="9.906"/>
+<vertex x="75.692" y="9.906"/>
+<vertex x="75.692" y="12.573"/>
+<vertex x="59.309" y="12.573"/>
+</polygon>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="56.007" y="15.621"/>
+<vertex x="60.706" y="15.621"/>
+<vertex x="60.706" y="13.208"/>
+<vertex x="56.007" y="13.208"/>
 </polygon>
 </signal>
 <signal name="ESC4_Y">
 <contactref element="U$10" pad="8"/>
-<contactref element="U$2" pad="ESC4_P2@3"/>
-<contactref element="U$2" pad="ESC4_P2@2"/>
-<contactref element="U$2" pad="ESC4_P2@4"/>
-<contactref element="U$2" pad="ESC4_P2@1"/>
-<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
-<vertex x="66.167" y="6.985"/>
-<vertex x="66.167" y="11.684"/>
-<vertex x="59.055" y="11.684"/>
-<vertex x="58.801" y="11.43"/>
-<vertex x="51.816" y="11.43"/>
-<vertex x="51.816" y="6.223"/>
-<vertex x="58.547" y="6.223"/>
-<vertex x="59.309" y="6.985"/>
+<contactref element="J4" pad="2"/>
+<polygon width="0.6604" layer="1" isolate="0.3048">
+<vertex x="84.328" y="8.763"/>
+<vertex x="59.309" y="8.763"/>
+<vertex x="59.309" y="4.826"/>
+<vertex x="84.328" y="4.826"/>
 </polygon>
-<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
-<vertex x="67.056" y="6.985"/>
-<vertex x="67.056" y="11.684"/>
-<vertex x="59.055" y="11.684"/>
-<vertex x="58.801" y="11.43"/>
-<vertex x="51.816" y="11.43"/>
-<vertex x="51.816" y="6.223"/>
-<vertex x="58.547" y="6.223"/>
-<vertex x="59.309" y="6.985"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="73.025" y="11.43"/>
+<vertex x="58.928" y="11.43"/>
+<vertex x="58.928" y="9.779"/>
+<vertex x="57.404" y="9.779"/>
+<vertex x="57.404" y="7.747"/>
+<vertex x="58.801" y="7.747"/>
+<vertex x="58.801" y="6.477"/>
+<vertex x="73.025" y="6.477"/>
+</polygon>
+<polygon width="0.6604" layer="16" isolate="0.3048">
+<vertex x="85.09" y="8.763"/>
+<vertex x="59.309" y="8.763"/>
+<vertex x="59.309" y="4.826"/>
+<vertex x="85.09" y="4.826"/>
+</polygon>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="73.279" y="11.43"/>
+<vertex x="58.928" y="11.43"/>
+<vertex x="58.928" y="9.779"/>
+<vertex x="57.658" y="9.779"/>
+<vertex x="57.658" y="7.747"/>
+<vertex x="58.801" y="7.747"/>
+<vertex x="58.801" y="6.477"/>
+<vertex x="73.279" y="6.477"/>
 </polygon>
 </signal>
 <signal name="ESC4_R">
 <contactref element="U$10" pad="7"/>
-<contactref element="U$2" pad="ESC4_P3@2"/>
-<contactref element="U$2" pad="ESC4_P3@1"/>
-<contactref element="U$2" pad="ESC4_P3@3"/>
-<contactref element="U$2" pad="ESC4_P3@4"/>
-<polygon width="0.1524" layer="16" thermals="no">
-<vertex x="52.578" y="5.842"/>
-<vertex x="58.674" y="5.842"/>
-<vertex x="59.436" y="6.604"/>
-<vertex x="66.167" y="6.604"/>
-<vertex x="66.167" y="0.127"/>
-<vertex x="52.578" y="0.127"/>
+<contactref element="J4" pad="1"/>
+<polygon width="0.762" layer="1" isolate="0.3048">
+<vertex x="84.582" y="3.81"/>
+<vertex x="59.309" y="3.81"/>
+<vertex x="59.309" y="-0.127"/>
+<vertex x="84.582" y="-0.127"/>
 </polygon>
 <polygon width="0.1524" layer="1" thermals="no">
-<vertex x="52.578" y="5.842"/>
-<vertex x="58.674" y="5.842"/>
-<vertex x="59.436" y="6.604"/>
-<vertex x="67.056" y="6.604"/>
-<vertex x="67.056" y="0.127"/>
-<vertex x="52.578" y="0.127"/>
+<vertex x="62.611" y="3.81"/>
+<vertex x="55.499" y="3.81"/>
+<vertex x="55.499" y="2.159"/>
+<vertex x="58.801" y="2.159"/>
+<vertex x="58.801" y="-0.127"/>
+<vertex x="62.611" y="-0.127"/>
+</polygon>
+<polygon width="0.762" layer="16" isolate="0.3048">
+<vertex x="85.344" y="3.81"/>
+<vertex x="59.309" y="3.81"/>
+<vertex x="59.309" y="-0.127"/>
+<vertex x="85.344" y="-0.127"/>
+</polygon>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="62.865" y="3.81"/>
+<vertex x="55.753" y="3.81"/>
+<vertex x="55.753" y="2.159"/>
+<vertex x="58.801" y="2.159"/>
+<vertex x="58.801" y="-0.127"/>
+<vertex x="62.865" y="-0.127"/>
 </polygon>
 </signal>
 <signal name="ESC3_B">
 <contactref element="U$10" pad="12"/>
-<contactref element="U$2" pad="ESC3_P1@4"/>
-<contactref element="U$2" pad="ESC3_P1@3"/>
-<contactref element="U$2" pad="ESC3_P1@2"/>
-<contactref element="U$2" pad="ESC3_P1@1"/>
-<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
-<vertex x="66.167" y="27.305"/>
-<vertex x="59.182" y="27.305"/>
-<vertex x="57.912" y="28.575"/>
-<vertex x="51.943" y="28.575"/>
-<vertex x="51.943" y="33.909"/>
-<vertex x="66.167" y="33.909"/>
+<contactref element="J3" pad="3"/>
+<polygon width="1.016" layer="16" isolate="0.3048">
+<vertex x="86.868" y="29.718"/>
+<vertex x="59.309" y="29.718"/>
+<vertex x="59.309" y="34.925"/>
+<vertex x="53.721" y="34.925"/>
+<vertex x="53.721" y="40.513"/>
+<vertex x="86.868" y="40.513"/>
 </polygon>
-<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
-<vertex x="67.056" y="27.305"/>
-<vertex x="59.182" y="27.305"/>
-<vertex x="57.912" y="28.575"/>
-<vertex x="51.943" y="28.575"/>
-<vertex x="51.943" y="33.909"/>
-<vertex x="67.056" y="33.909"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="56.896" y="32.258"/>
+<vertex x="56.896" y="35.814"/>
+<vertex x="54.864" y="35.814"/>
+<vertex x="54.864" y="32.258"/>
+</polygon>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="55.118" y="32.258"/>
+<vertex x="55.118" y="35.814"/>
+<vertex x="57.15" y="35.814"/>
+<vertex x="57.15" y="32.258"/>
+</polygon>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="59.817" y="32.131"/>
+<vertex x="56.261" y="32.131"/>
+<vertex x="56.261" y="30.099"/>
+<vertex x="59.817" y="30.099"/>
+</polygon>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="56.515" y="32.131"/>
+<vertex x="60.071" y="32.131"/>
+<vertex x="60.071" y="30.099"/>
+<vertex x="56.515" y="30.099"/>
+</polygon>
+<polygon width="1.016" layer="1" isolate="0.3048">
+<vertex x="85.598" y="29.718"/>
+<vertex x="59.309" y="29.718"/>
+<vertex x="59.309" y="34.925"/>
+<vertex x="53.721" y="34.925"/>
+<vertex x="53.721" y="40.513"/>
+<vertex x="85.598" y="40.513"/>
 </polygon>
 </signal>
 <signal name="ESC3_Y">
 <contactref element="U$10" pad="11"/>
-<contactref element="U$2" pad="ESC3_P2@3"/>
-<contactref element="U$2" pad="ESC3_P2@4"/>
-<contactref element="U$2" pad="ESC3_P2@2"/>
-<contactref element="U$2" pad="ESC3_P2@1"/>
-<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
-<vertex x="66.294" y="26.924"/>
-<vertex x="58.547" y="26.924"/>
-<vertex x="57.404" y="28.067"/>
-<vertex x="51.943" y="28.067"/>
-<vertex x="51.943" y="22.86"/>
-<vertex x="58.674" y="22.86"/>
-<vertex x="59.182" y="22.352"/>
-<vertex x="66.294" y="22.352"/>
+<contactref element="J3" pad="2"/>
+<polygon width="0.6604" layer="1" isolate="0.3048">
+<vertex x="84.582" y="28.448"/>
+<vertex x="59.055" y="28.448"/>
+<vertex x="59.055" y="23.495"/>
+<vertex x="73.533" y="23.495"/>
+<vertex x="73.533" y="24.511"/>
+<vertex x="84.582" y="24.511"/>
 </polygon>
-<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
-<vertex x="67.056" y="26.924"/>
-<vertex x="58.547" y="26.924"/>
-<vertex x="57.404" y="28.067"/>
-<vertex x="51.943" y="28.067"/>
-<vertex x="51.943" y="22.86"/>
-<vertex x="58.674" y="22.86"/>
-<vertex x="59.182" y="22.352"/>
-<vertex x="67.056" y="22.352"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="60.325" y="26.924"/>
+<vertex x="60.325" y="24.384"/>
+<vertex x="55.753" y="24.384"/>
+<vertex x="55.753" y="26.924"/>
+</polygon>
+<polygon width="0.6604" layer="16" isolate="0.3048">
+<vertex x="85.09" y="28.448"/>
+<vertex x="59.055" y="28.448"/>
+<vertex x="59.055" y="23.495"/>
+<vertex x="74.041" y="23.495"/>
+<vertex x="74.041" y="24.511"/>
+<vertex x="85.09" y="24.511"/>
+</polygon>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="55.499" y="26.924"/>
+<vertex x="55.499" y="24.384"/>
+<vertex x="60.071" y="24.384"/>
+<vertex x="60.071" y="26.924"/>
 </polygon>
 </signal>
 <signal name="ESC3_R">
 <contactref element="U$10" pad="10"/>
-<contactref element="U$2" pad="ESC3_P3@4"/>
-<contactref element="U$2" pad="ESC3_P3@3"/>
-<contactref element="U$2" pad="ESC3_P3@1"/>
-<contactref element="U$2" pad="ESC3_P3@2"/>
-<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
-<vertex x="66.294" y="21.971"/>
-<vertex x="58.928" y="21.971"/>
-<vertex x="58.42" y="22.479"/>
-<vertex x="51.689" y="22.479"/>
-<vertex x="51.689" y="17.272"/>
-<vertex x="66.294" y="17.272"/>
+<contactref element="J3" pad="1"/>
+<polygon width="1.016" layer="1" isolate="0.3048">
+<vertex x="84.582" y="18.034"/>
+<vertex x="59.309" y="18.034"/>
+<vertex x="59.309" y="22.098"/>
+<vertex x="74.93" y="22.098"/>
+<vertex x="74.93" y="23.368"/>
+<vertex x="84.582" y="23.368"/>
 </polygon>
-<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
-<vertex x="67.056" y="21.971"/>
-<vertex x="58.928" y="21.971"/>
-<vertex x="58.42" y="22.479"/>
-<vertex x="51.689" y="22.479"/>
-<vertex x="51.689" y="17.272"/>
-<vertex x="67.056" y="17.272"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="61.468" y="21.209"/>
+<vertex x="56.261" y="21.209"/>
+<vertex x="56.261" y="18.923"/>
+<vertex x="61.468" y="18.923"/>
+</polygon>
+<polygon width="1.016" layer="16" isolate="0.3048">
+<vertex x="85.344" y="18.034"/>
+<vertex x="59.309" y="18.034"/>
+<vertex x="59.309" y="22.098"/>
+<vertex x="75.692" y="22.098"/>
+<vertex x="75.692" y="23.368"/>
+<vertex x="85.344" y="23.368"/>
+</polygon>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="56.134" y="21.209"/>
+<vertex x="61.341" y="21.209"/>
+<vertex x="61.341" y="18.923"/>
+<vertex x="56.134" y="18.923"/>
 </polygon>
 </signal>
 <signal name="ESC2_B">
 <contactref element="U$10" pad="4"/>
-<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
-<vertex x="-0.762" y="16.891"/>
-<vertex x="13.462" y="16.891"/>
-<vertex x="13.462" y="11.811"/>
-<vertex x="7.112" y="11.811"/>
-<vertex x="6.731" y="12.192"/>
-<vertex x="-0.762" y="12.192"/>
+<contactref element="J2" pad="1"/>
+<polygon width="1.016" layer="16" isolate="0.3048">
+<vertex x="6.731" y="16.383"/>
+<vertex x="-20.066" y="16.383"/>
+<vertex x="-20.066" y="9.906"/>
+<vertex x="-8.89" y="9.906"/>
+<vertex x="-8.89" y="12.573"/>
+<vertex x="6.731" y="12.573"/>
 </polygon>
-<contactref element="U$2" pad="ESC2_P1@2"/>
-<contactref element="U$2" pad="ESC2_P1@4"/>
-<contactref element="U$2" pad="ESC2_P1@3"/>
-<contactref element="U$2" pad="ESC2_P1@1"/>
-<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
-<vertex x="-1.524" y="16.891"/>
-<vertex x="13.462" y="16.891"/>
-<vertex x="13.462" y="11.811"/>
-<vertex x="7.112" y="11.811"/>
-<vertex x="6.731" y="12.192"/>
-<vertex x="-1.524" y="12.192"/>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="5.461" y="15.621"/>
+<vertex x="10.16" y="15.621"/>
+<vertex x="10.16" y="13.208"/>
+<vertex x="5.461" y="13.208"/>
+</polygon>
+<polygon width="1.016" layer="1" isolate="0.3048">
+<vertex x="6.731" y="16.383"/>
+<vertex x="-20.828" y="16.383"/>
+<vertex x="-20.828" y="9.906"/>
+<vertex x="-9.652" y="9.906"/>
+<vertex x="-9.652" y="12.573"/>
+<vertex x="6.731" y="12.573"/>
+</polygon>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="10.033" y="15.621"/>
+<vertex x="5.334" y="15.621"/>
+<vertex x="5.334" y="13.208"/>
+<vertex x="10.033" y="13.208"/>
 </polygon>
 </signal>
 <signal name="ESC2_Y">
 <contactref element="U$10" pad="5"/>
-<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
-<vertex x="-0.635" y="6.985"/>
-<vertex x="-0.635" y="11.684"/>
-<vertex x="6.477" y="11.684"/>
-<vertex x="6.731" y="11.43"/>
-<vertex x="13.716" y="11.43"/>
-<vertex x="13.716" y="6.223"/>
-<vertex x="6.985" y="6.223"/>
-<vertex x="6.223" y="6.985"/>
+<contactref element="J2" pad="2"/>
+<polygon width="0.6604" layer="16" isolate="0.3048">
+<vertex x="-18.288" y="8.763"/>
+<vertex x="6.731" y="8.763"/>
+<vertex x="6.731" y="4.826"/>
+<vertex x="-18.288" y="4.826"/>
 </polygon>
-<contactref element="U$2" pad="ESC2_P2@3"/>
-<contactref element="U$2" pad="ESC2_P2@1"/>
-<contactref element="U$2" pad="ESC2_P2@2"/>
-<contactref element="U$2" pad="ESC2_P2@4"/>
-<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
-<vertex x="-1.524" y="6.985"/>
-<vertex x="-1.524" y="11.684"/>
-<vertex x="6.477" y="11.684"/>
-<vertex x="6.731" y="11.43"/>
-<vertex x="13.716" y="11.43"/>
-<vertex x="13.716" y="6.223"/>
-<vertex x="6.985" y="6.223"/>
-<vertex x="6.223" y="6.985"/>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="-6.985" y="11.43"/>
+<vertex x="7.112" y="11.43"/>
+<vertex x="7.112" y="9.779"/>
+<vertex x="8.636" y="9.779"/>
+<vertex x="8.636" y="7.747"/>
+<vertex x="7.239" y="7.747"/>
+<vertex x="7.239" y="6.477"/>
+<vertex x="-6.985" y="6.477"/>
+</polygon>
+<polygon width="0.6604" layer="1" isolate="0.3048">
+<vertex x="-19.05" y="8.763"/>
+<vertex x="6.731" y="8.763"/>
+<vertex x="6.731" y="4.826"/>
+<vertex x="-19.05" y="4.826"/>
+</polygon>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="-7.239" y="11.43"/>
+<vertex x="7.112" y="11.43"/>
+<vertex x="7.112" y="9.779"/>
+<vertex x="8.382" y="9.779"/>
+<vertex x="8.382" y="7.747"/>
+<vertex x="7.239" y="7.747"/>
+<vertex x="7.239" y="6.477"/>
+<vertex x="-7.239" y="6.477"/>
 </polygon>
 </signal>
 <signal name="ESC2_R">
 <contactref element="U$10" pad="6"/>
-<polygon width="0.1524" layer="1" thermals="no">
-<vertex x="12.954" y="5.842"/>
-<vertex x="6.858" y="5.842"/>
-<vertex x="6.096" y="6.604"/>
-<vertex x="-0.635" y="6.604"/>
-<vertex x="-0.635" y="0.127"/>
-<vertex x="12.954" y="0.127"/>
+<contactref element="J2" pad="3"/>
+<polygon width="0.762" layer="16" isolate="0.3048">
+<vertex x="-18.542" y="3.81"/>
+<vertex x="5.715" y="3.81"/>
+<vertex x="5.715" y="-0.127"/>
+<vertex x="-18.542" y="-0.127"/>
 </polygon>
-<contactref element="U$2" pad="ESC2_P3@4"/>
-<contactref element="U$2" pad="ESC2_P3@1"/>
-<contactref element="U$2" pad="ESC2_P3@2"/>
-<contactref element="U$2" pad="ESC2_P3@3"/>
 <polygon width="0.1524" layer="16" thermals="no">
-<vertex x="12.954" y="5.842"/>
-<vertex x="6.858" y="5.842"/>
-<vertex x="6.096" y="6.604"/>
-<vertex x="-1.524" y="6.604"/>
-<vertex x="-1.524" y="0.127"/>
-<vertex x="12.954" y="0.127"/>
+<vertex x="3.429" y="3.81"/>
+<vertex x="10.541" y="3.81"/>
+<vertex x="10.541" y="2.159"/>
+<vertex x="7.239" y="2.159"/>
+<vertex x="7.239" y="-0.127"/>
+<vertex x="3.429" y="-0.127"/>
 </polygon>
-</signal>
-<signal name="ESC1_B">
-<contactref element="U$10" pad="1"/>
-<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
-<vertex x="-0.635" y="27.305"/>
-<vertex x="6.35" y="27.305"/>
-<vertex x="7.62" y="28.575"/>
-<vertex x="13.589" y="28.575"/>
-<vertex x="13.589" y="33.909"/>
-<vertex x="-0.635" y="33.909"/>
+<polygon width="0.762" layer="1" isolate="0.3048">
+<vertex x="-19.304" y="3.81"/>
+<vertex x="5.715" y="3.81"/>
+<vertex x="5.715" y="-0.127"/>
+<vertex x="-19.304" y="-0.127"/>
 </polygon>
-<contactref element="U$2" pad="ESC1_P1@4"/>
-<contactref element="U$2" pad="ESC1_P1@1"/>
-<contactref element="U$2" pad="ESC1_P1@2"/>
-<contactref element="U$2" pad="ESC1_P1@3"/>
-<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
-<vertex x="-1.524" y="27.305"/>
-<vertex x="6.35" y="27.305"/>
-<vertex x="7.62" y="28.575"/>
-<vertex x="13.589" y="28.575"/>
-<vertex x="13.589" y="33.909"/>
-<vertex x="-1.524" y="33.909"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="3.175" y="3.81"/>
+<vertex x="10.287" y="3.81"/>
+<vertex x="10.287" y="2.159"/>
+<vertex x="7.239" y="2.159"/>
+<vertex x="7.239" y="-0.127"/>
+<vertex x="3.175" y="-0.127"/>
 </polygon>
 </signal>
 <signal name="ESC1_Y">
 <contactref element="U$10" pad="2"/>
-<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
-<vertex x="-0.762" y="26.924"/>
-<vertex x="6.985" y="26.924"/>
-<vertex x="8.128" y="28.067"/>
-<vertex x="13.589" y="28.067"/>
-<vertex x="13.589" y="22.86"/>
-<vertex x="6.858" y="22.86"/>
-<vertex x="6.35" y="22.352"/>
-<vertex x="-0.762" y="22.352"/>
+<contactref element="J1" pad="2"/>
+<polygon width="0.6604" layer="16" isolate="0.3048">
+<vertex x="-18.542" y="28.448"/>
+<vertex x="6.985" y="28.448"/>
+<vertex x="6.985" y="23.495"/>
+<vertex x="-7.493" y="23.495"/>
+<vertex x="-7.493" y="24.511"/>
+<vertex x="-18.542" y="24.511"/>
 </polygon>
-<contactref element="U$2" pad="ESC1_P2@3"/>
-<contactref element="U$2" pad="ESC1_P2@4"/>
-<contactref element="U$2" pad="ESC1_P2@1"/>
-<contactref element="U$2" pad="ESC1_P2@2"/>
-<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
-<vertex x="-1.524" y="26.924"/>
-<vertex x="6.985" y="26.924"/>
-<vertex x="8.128" y="28.067"/>
-<vertex x="13.589" y="28.067"/>
-<vertex x="13.589" y="22.86"/>
-<vertex x="6.858" y="22.86"/>
-<vertex x="6.35" y="22.352"/>
-<vertex x="-1.524" y="22.352"/>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="5.715" y="26.924"/>
+<vertex x="5.715" y="24.384"/>
+<vertex x="10.287" y="24.384"/>
+<vertex x="10.287" y="26.924"/>
+</polygon>
+<polygon width="0.6604" layer="1" isolate="0.3048">
+<vertex x="-19.05" y="28.448"/>
+<vertex x="6.985" y="28.448"/>
+<vertex x="6.985" y="23.495"/>
+<vertex x="-8.001" y="23.495"/>
+<vertex x="-8.001" y="24.511"/>
+<vertex x="-19.05" y="24.511"/>
+</polygon>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="10.541" y="26.924"/>
+<vertex x="10.541" y="24.384"/>
+<vertex x="5.969" y="24.384"/>
+<vertex x="5.969" y="26.924"/>
 </polygon>
 </signal>
 <signal name="ESC1_R">
 <contactref element="U$10" pad="3"/>
-<polygon width="0.1524" layer="1" isolate="0.254" thermals="no">
-<vertex x="-0.762" y="21.971"/>
-<vertex x="6.604" y="21.971"/>
-<vertex x="7.112" y="22.479"/>
-<vertex x="13.843" y="22.479"/>
-<vertex x="13.843" y="17.272"/>
-<vertex x="-0.762" y="17.272"/>
+<contactref element="J1" pad="3"/>
+<polygon width="1.016" layer="16" isolate="0.3048">
+<vertex x="-18.542" y="18.034"/>
+<vertex x="5.461" y="18.034"/>
+<vertex x="5.461" y="22.098"/>
+<vertex x="-8.89" y="22.098"/>
+<vertex x="-8.89" y="23.368"/>
+<vertex x="-18.542" y="23.368"/>
 </polygon>
-<contactref element="U$2" pad="ESC1_P3@1"/>
-<contactref element="U$2" pad="ESC1_P3@3"/>
-<contactref element="U$2" pad="ESC1_P3@2"/>
-<contactref element="U$2" pad="ESC1_P3@4"/>
-<polygon width="0.1524" layer="16" isolate="0.254" thermals="no">
-<vertex x="-1.524" y="21.971"/>
-<vertex x="6.604" y="21.971"/>
-<vertex x="7.112" y="22.479"/>
-<vertex x="13.843" y="22.479"/>
-<vertex x="13.843" y="17.272"/>
-<vertex x="-1.524" y="17.272"/>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="4.572" y="21.209"/>
+<vertex x="9.779" y="21.209"/>
+<vertex x="9.779" y="18.923"/>
+<vertex x="4.572" y="18.923"/>
+</polygon>
+<polygon width="1.016" layer="1" isolate="0.3048">
+<vertex x="-19.304" y="18.034"/>
+<vertex x="5.461" y="18.034"/>
+<vertex x="5.461" y="22.098"/>
+<vertex x="-9.652" y="22.098"/>
+<vertex x="-9.652" y="23.368"/>
+<vertex x="-19.304" y="23.368"/>
+</polygon>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="9.906" y="21.209"/>
+<vertex x="4.699" y="21.209"/>
+<vertex x="4.699" y="18.923"/>
+<vertex x="9.906" y="18.923"/>
 </polygon>
 </signal>
 <signal name="12V">
@@ -1122,45 +1153,61 @@ Please make sure your boards conform to these design rules.
 <via x="40.513" y="34.544" extent="1-16" drill="0.6"/>
 <via x="42.291" y="36.068" extent="1-16" drill="0.6"/>
 <via x="42.291" y="34.544" extent="1-16" drill="0.6"/>
-<contactref element="U$2" pad="12V@5"/>
-<contactref element="U$2" pad="12V@6"/>
-<contactref element="U$2" pad="12V@8"/>
-<contactref element="U$2" pad="12V@9"/>
-<contactref element="U$2" pad="12V@10"/>
-<contactref element="U$2" pad="12V@1"/>
-<contactref element="U$2" pad="12V@3"/>
-<contactref element="U$2" pad="12V@12"/>
-<contactref element="U$2" pad="12V@11"/>
-<contactref element="U$2" pad="12V@2"/>
-<contactref element="U$2" pad="12V@4"/>
-<contactref element="U$2" pad="12V@7"/>
+<contactref element="U$1" pad="12V@11"/>
+<contactref element="U$1" pad="12V@9"/>
+<contactref element="U$1" pad="12V@1"/>
+<contactref element="U$1" pad="12V@7"/>
+<contactref element="U$1" pad="12V@8"/>
+<contactref element="U$1" pad="12V@2"/>
+<contactref element="U$1" pad="12V@5"/>
+<contactref element="U$1" pad="12V@6"/>
+<contactref element="U$1" pad="12V@10"/>
+<contactref element="U$1" pad="12V@12"/>
+<contactref element="U$1" pad="12V@4"/>
+<contactref element="U$1" pad="12V@3"/>
 </signal>
-<signal name="FILL_B_L">
-<polygon width="0.508" layer="1" isolate="0.6096" orphans="yes" rank="6">
-<vertex x="0.254" y="40.894"/>
-<vertex x="14.224" y="40.894"/>
-<vertex x="14.224" y="33.528"/>
-<vertex x="0.254" y="33.528"/>
+<signal name="ESC1_B">
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="6.223" y="32.131"/>
+<vertex x="9.779" y="32.131"/>
+<vertex x="9.779" y="30.099"/>
+<vertex x="6.223" y="30.099"/>
 </polygon>
-<polygon width="0.508" layer="16" isolate="0.6096" orphans="yes" rank="6">
-<vertex x="0.254" y="41.148"/>
-<vertex x="14.224" y="41.148"/>
-<vertex x="14.224" y="33.782"/>
-<vertex x="0.254" y="33.782"/>
+<contactref element="U$10" pad="1"/>
+<contactref element="J1" pad="1"/>
+<polygon width="1.016" layer="16" isolate="0.3048">
+<vertex x="-19.558" y="29.972"/>
+<vertex x="6.223" y="29.972"/>
+<vertex x="6.223" y="34.925"/>
+<vertex x="12.319" y="34.925"/>
+<vertex x="12.319" y="40.513"/>
+<vertex x="-19.558" y="40.513"/>
 </polygon>
-</signal>
-<signal name="FILL_B_R">
-<polygon width="0.508" layer="1" isolate="0.6096" rank="6">
-<vertex x="51.816" y="40.64"/>
-<vertex x="67.564" y="40.64"/>
-<vertex x="67.564" y="35.052"/>
-<vertex x="51.816" y="35.052"/>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="9.144" y="32.258"/>
+<vertex x="9.144" y="35.814"/>
+<vertex x="11.176" y="35.814"/>
+<vertex x="11.176" y="32.258"/>
 </polygon>
-<polygon width="0.508" layer="16" isolate="0.6096" rank="6">
-<vertex x="67.818" y="40.64"/>
-<vertex x="52.07" y="40.64"/>
-<vertex x="52.07" y="35.052"/>
-<vertex x="67.818" y="35.052"/>
+<polygon width="1.016" layer="1" isolate="0.3048">
+<vertex x="-20.828" y="29.972"/>
+<vertex x="6.223" y="29.972"/>
+<vertex x="6.223" y="34.925"/>
+<vertex x="12.319" y="34.925"/>
+<vertex x="12.319" y="40.513"/>
+<vertex x="-20.828" y="40.513"/>
+</polygon>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="9.525" y="32.131"/>
+<vertex x="5.969" y="32.131"/>
+<vertex x="5.969" y="30.099"/>
+<vertex x="9.525" y="30.099"/>
+</polygon>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="10.922" y="32.258"/>
+<vertex x="10.922" y="35.814"/>
+<vertex x="8.89" y="35.814"/>
+<vertex x="8.89" y="32.258"/>
 </polygon>
 </signal>
 </signals>
@@ -1174,11 +1221,6 @@ Please make sure your boards conform to these design rules.
 </board>
 </drawing>
 <compatibility>
-<note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
-of those online libraries will not be understood (or retained)
-with this version.
-</note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
