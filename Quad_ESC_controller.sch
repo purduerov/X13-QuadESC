@@ -3868,11 +3868,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="SWDIO" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="PA13"/>
-<wire x1="492.76" y1="140.97" x2="508" y2="140.97" width="0.1524" layer="91"/>
-<label x="502.92" y="140.97" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="SV2" gate="G$1" pin="2"/>
 <wire x1="340.36" y1="134.62" x2="355.6" y2="134.62" width="0.1524" layer="91"/>
 <label x="350.52" y="134.62" size="1.778" layer="95"/>
@@ -3882,13 +3877,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="214.884" y1="132.08" x2="203.2" y2="132.08" width="0.1524" layer="91"/>
 <label x="203.2" y="132.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="PA13"/>
+<wire x1="492.76" y1="140.97" x2="507.746" y2="140.97" width="0.1524" layer="91"/>
+<label x="502.92" y="140.97" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SWCLK" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="PA14"/>
-<wire x1="492.76" y1="143.51" x2="508" y2="143.51" width="0.1524" layer="91"/>
-<label x="502.92" y="143.51" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="SV2" gate="G$1" pin="4"/>
 <wire x1="340.36" y1="139.7" x2="355.6" y2="139.7" width="0.1524" layer="91"/>
@@ -3899,19 +3894,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="214.884" y1="129.54" x2="203.2" y2="129.54" width="0.1524" layer="91"/>
 <label x="203.2" y="129.54" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="NRST1" class="0">
 <segment>
-<pinref part="C7" gate="G$1" pin="1"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="401.32" y1="140.97" x2="401.32" y2="135.89" width="0.1524" layer="91"/>
-<pinref part="RESET" gate="G$1" pin="P$2"/>
-<wire x1="401.32" y1="135.89" x2="401.32" y2="130.81" width="0.1524" layer="91"/>
-<wire x1="414.02" y1="135.89" x2="401.32" y2="135.89" width="0.1524" layer="91"/>
-<junction x="401.32" y="135.89"/>
-<pinref part="U$4" gate="G$1" pin="NRST"/>
-<wire x1="414.02" y1="135.89" x2="447.04" y2="135.89" width="0.1524" layer="91"/>
-<junction x="414.02" y="135.89"/>
+<pinref part="U$4" gate="G$1" pin="PA14"/>
+<wire x1="492.76" y1="143.51" x2="507.492" y2="143.51" width="0.1524" layer="91"/>
+<label x="502.92" y="143.51" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED" class="0">
@@ -3936,9 +3922,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="350.52" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="401.32" y1="140.97" x2="401.32" y2="135.89" width="0.1524" layer="91"/>
+<pinref part="RESET" gate="G$1" pin="P$2"/>
+<wire x1="401.32" y1="135.89" x2="401.32" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="414.02" y1="135.89" x2="401.32" y2="135.89" width="0.1524" layer="91"/>
+<junction x="401.32" y="135.89"/>
+<pinref part="U$4" gate="G$1" pin="NRST"/>
+<wire x1="447.04" y1="135.89" x2="414.02" y2="135.89" width="0.1524" layer="91"/>
+<junction x="414.02" y="135.89"/>
+<label x="435.102" y="135.89" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="U$3" gate="G$3" pin="6"/>
-<wire x1="237.744" y1="137.16" x2="247.65" y2="137.16" width="0.1524" layer="91"/>
-<label x="241.3" y="137.16" size="1.778" layer="95"/>
+<wire x1="237.744" y1="137.16" x2="246.38" y2="137.16" width="0.1524" layer="91"/>
+<label x="238.76" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OSC_IN" class="0">
