@@ -1371,11 +1371,12 @@ Please make sure your boards conform to these design rules.
 <signal name="OSC_OUT">
 <contactref element="R1" pad="2"/>
 <contactref element="U$4" pad="PF1-OSC_OUT"/>
-<wire x1="9.906" y1="21.082" x2="9.398" y2="20.574" width="0.254" layer="16"/>
+<wire x1="10.414" y1="21.59" x2="9.398" y2="20.574" width="0.254" layer="16"/>
 <via x="9.398" y="20.574" extent="1-16" drill="0.35"/>
 <wire x1="9.398" y1="20.574" x2="9.398" y2="18.352" width="0.254" layer="1"/>
 <wire x1="9.398" y1="18.352" x2="9.334" y2="18.288" width="0.254" layer="1"/>
-<wire x1="9.906" y1="25.312" x2="9.906" y2="21.082" width="0.254" layer="16"/>
+<wire x1="9.906" y1="25.312" x2="10.414" y2="24.804" width="0.254" layer="16"/>
+<wire x1="10.414" y1="24.804" x2="10.414" y2="21.59" width="0.254" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="Y1" pad="2"/>
