@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -1309,20 +1323,6 @@ Warning: This is the KIT version of the AXIAL-0.1 package. This package has a sm
 </library>
 <library name="BLHeli_32 45A">
 <packages>
-<package name="8PI_CONNECTOR">
-<wire x1="0" y1="0" x2="10" y2="0" width="0.1524" layer="21"/>
-<wire x1="10" y1="0" x2="10" y2="4.25" width="0.1524" layer="21"/>
-<wire x1="10" y1="4.25" x2="0" y2="4.25" width="0.1524" layer="21"/>
-<wire x1="0" y1="4.25" x2="0" y2="0" width="0.1524" layer="21"/>
-<smd name="P$1" x="1.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="P$2" x="2.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="P$3" x="3.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="P$4" x="4.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="P$5" x="5.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="P$6" x="6.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="P$7" x="7.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
-<smd name="P$8" x="8.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
-</package>
 <package name="BACKPLANE_CONNECTORS_BKP">
 <wire x1="-18.796" y1="-16.764" x2="-18.796" y2="17.272" width="0.1524" layer="51"/>
 <wire x1="-18.796" y1="17.272" x2="4.064" y2="17.272" width="0.1524" layer="51"/>
@@ -1404,44 +1404,8 @@ Warning: This is the KIT version of the AXIAL-0.1 package. This package has a sm
 <pin name="12" x="11.684" y="-6.35" length="middle" direction="pas" rot="R180"/>
 <text x="0" y="10.16" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="8PIN_CONNECTOR">
-<wire x1="0" y1="0" x2="20" y2="0" width="0.1524" layer="94"/>
-<wire x1="20" y1="0" x2="20" y2="9.54" width="0.1524" layer="94"/>
-<wire x1="20" y1="9.54" x2="0" y2="9.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="9.54" x2="0" y2="0" width="0.1524" layer="94"/>
-<pin name="LIPO_IN" x="3" y="-5" length="middle" rot="R90"/>
-<pin name="LIPO_GND" x="5" y="-5" length="middle" rot="R90"/>
-<pin name="ADC" x="7" y="-5" length="middle" rot="R90"/>
-<pin name="TLM" x="9" y="-5" length="middle" rot="R90"/>
-<pin name="MTR_1" x="11" y="-5" length="middle" rot="R90"/>
-<pin name="MTR_2" x="13" y="-5" length="middle" rot="R90"/>
-<pin name="MTR_3" x="15" y="-5" length="middle" rot="R90"/>
-<pin name="MTR_4" x="17" y="-5" length="middle" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
-<deviceset name="8PIN_CONNECTOR">
-<gates>
-<gate name="G$1" symbol="8PIN_CONNECTOR" x="-10.16" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="8PI_CONNECTOR">
-<connects>
-<connect gate="G$1" pin="ADC" pad="P$3"/>
-<connect gate="G$1" pin="LIPO_GND" pad="P$2"/>
-<connect gate="G$1" pin="LIPO_IN" pad="P$1"/>
-<connect gate="G$1" pin="MTR_1" pad="P$5"/>
-<connect gate="G$1" pin="MTR_2" pad="P$6"/>
-<connect gate="G$1" pin="MTR_3" pad="P$7"/>
-<connect gate="G$1" pin="MTR_4" pad="P$8"/>
-<connect gate="G$1" pin="TLM" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="BACKPLANE_CONNECTORS">
 <description>Use samtec TMM and MMS</description>
 <gates>
@@ -2345,6 +2309,85 @@ by exp-lbrs.ulp</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="JST 8 pin">
+<packages>
+<package name="8PIN_CONNECTOR" urn="urn:adsk.eagle:footprint:25902941/2">
+<wire x1="0" y1="0" x2="10" y2="0" width="0.1524" layer="21"/>
+<wire x1="10" y1="0" x2="10" y2="4.25" width="0.1524" layer="21"/>
+<wire x1="10" y1="4.25" x2="0" y2="4.25" width="0.1524" layer="21"/>
+<wire x1="0" y1="4.25" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.254" y1="-0.254" x2="-0.254" y2="4.445" width="0.127" layer="39"/>
+<wire x1="-0.254" y1="4.445" x2="10.16" y2="4.445" width="0.127" layer="39"/>
+<wire x1="10.16" y1="4.445" x2="10.16" y2="-0.254" width="0.127" layer="39"/>
+<wire x1="10.16" y1="-0.254" x2="9.017" y2="-0.254" width="0.127" layer="39"/>
+<wire x1="9.017" y1="-0.254" x2="9.017" y2="-1.651" width="0.127" layer="39"/>
+<wire x1="9.017" y1="-1.651" x2="1.016" y2="-1.651" width="0.127" layer="39"/>
+<wire x1="1.016" y1="-1.651" x2="1.016" y2="-0.254" width="0.127" layer="39"/>
+<wire x1="1.016" y1="-0.254" x2="-0.254" y2="-0.254" width="0.127" layer="39"/>
+<smd name="1" x="1.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="2" x="2.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="3" x="3.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="4" x="4.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="5" x="5.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="6" x="6.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="7" x="7.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<smd name="8" x="8.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
+<text x="1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="8PIN_CONNECTOR" urn="urn:adsk.eagle:package:25902943/3" type="model">
+<packageinstances>
+<packageinstance name="8PIN_CONNECTOR"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="8PIN_CONNECTOR">
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-20.32" x2="7.62" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-20.32" x2="7.62" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<pin name="LIPO_IN" x="-10.16" y="0" length="middle"/>
+<pin name="LIPO_GND" x="-10.16" y="-2.54" length="middle"/>
+<pin name="ADC" x="-10.16" y="-5.08" length="middle"/>
+<pin name="TLM" x="-10.16" y="-7.62" length="middle"/>
+<pin name="MTR_1" x="-10.16" y="-10.16" length="middle"/>
+<pin name="MTR_2" x="-10.16" y="-12.7" length="middle"/>
+<pin name="MTR_3" x="-10.16" y="-15.24" length="middle"/>
+<pin name="MTR_4" x="-10.16" y="-17.78" length="middle"/>
+<text x="-2.54" y="2.54" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JST-8PIN" prefix="J">
+<description>SM08B-SRSS-TB(LF)(SN)</description>
+<gates>
+<gate name="G$1" symbol="8PIN_CONNECTOR" x="0" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="8PIN_CONNECTOR">
+<connects>
+<connect gate="G$1" pin="ADC" pad="3"/>
+<connect gate="G$1" pin="LIPO_GND" pad="2"/>
+<connect gate="G$1" pin="LIPO_IN" pad="1"/>
+<connect gate="G$1" pin="MTR_1" pad="5"/>
+<connect gate="G$1" pin="MTR_2" pad="6"/>
+<connect gate="G$1" pin="MTR_3" pad="7"/>
+<connect gate="G$1" pin="MTR_4" pad="8"/>
+<connect gate="G$1" pin="TLM" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:25902943/3"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2381,18 +2424,18 @@ by exp-lbrs.ulp</description>
 <part name="GND8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SV2" library="con-lsta" library_urn="urn:adsk.eagle:library:161" deviceset="FE05-1" device="" package3d_urn="urn:adsk.eagle:package:8190/1"/>
 <part name="U$8" library="PI_Shield_Library" deviceset="TCAN337D" device=""/>
-<part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="100nF"/>
+<part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF"/>
 <part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="GND12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="4.7uF"/>
-<part name="C9" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="4.7uF"/>
+<part name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="20pF"/>
+<part name="C9" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="20pF"/>
 <part name="Y1" library="ECS-80-S-4X" deviceset="ECS-80-S-4X" device=""/>
-<part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
-<part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
+<part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="0"/>
+<part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="0"/>
 <part name="GND15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
-<part name="U$2" library="BLHeli_32 45A" deviceset="8PIN_CONNECTOR" device=""/>
+<part name="U$2" library="JST 8 pin" deviceset="JST-8PIN" device="" package3d_urn="urn:adsk.eagle:package:25902943/3"/>
 <part name="U$3" library="BLHeli_32 45A" deviceset="BACKPLANE_CONNECTORS" device="ESC" value="BACKPLANE_CONNECTORSESC"/>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
@@ -2537,7 +2580,7 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="56.896" y="124.46" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="59.944" y="124.46" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="U$2" gate="G$1" x="149.86" y="38.1" smashed="yes" rot="R180"/>
+<instance part="U$2" gate="G$1" x="134.62" y="40.64" smashed="yes" rot="R180"/>
 <instance part="U$3" gate="G$1" x="210.82" y="95.25" smashed="yes"/>
 <instance part="+3V8" gate="G$1" x="194.31" y="107.95" smashed="yes">
 <attribute name="VALUE" x="191.77" y="102.87" size="1.778" layer="96" rot="R90"/>
@@ -2545,8 +2588,8 @@ by exp-lbrs.ulp</description>
 <instance part="+3V9" gate="G$1" x="228.6" y="107.95" smashed="yes">
 <attribute name="VALUE" x="226.06" y="102.87" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY1" gate="GND" x="152.4" y="52.07" smashed="yes">
-<attribute name="VALUE" x="150.495" y="48.895" size="1.778" layer="96"/>
+<instance part="SUPPLY1" gate="GND" x="149.86" y="30.48" smashed="yes">
+<attribute name="VALUE" x="147.955" y="27.305" size="1.778" layer="96"/>
 </instance>
 <instance part="+3V6" gate="G$1" x="63.5" y="116.84" smashed="yes">
 <attribute name="VALUE" x="60.96" y="111.76" size="1.778" layer="96" rot="R90"/>
@@ -2644,10 +2687,9 @@ by exp-lbrs.ulp</description>
 <junction x="215.9" y="152.4"/>
 </segment>
 <segment>
-<wire x1="144.86" y1="57.15" x2="152.4" y2="57.15" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="57.15" x2="152.4" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="43.18" x2="149.86" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="LIPO_GND"/>
-<wire x1="144.86" y1="43.1" x2="144.86" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="43.18" x2="149.86" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -2773,8 +2815,8 @@ by exp-lbrs.ulp</description>
 <net name="TIM3_CH1" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="MTR_1"/>
-<wire x1="138.86" y1="43.1" x2="138.86" y2="58.34" width="0.1524" layer="91"/>
-<label x="138.86" y="57.07" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+<wire x1="144.78" y1="50.8" x2="157.48" y2="50.8" width="0.1524" layer="91"/>
+<label x="157.48" y="50.8" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="PB1"/>
@@ -2785,8 +2827,8 @@ by exp-lbrs.ulp</description>
 <net name="TIM3_CH2" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="MTR_2"/>
-<wire x1="136.86" y1="43.1" x2="136.86" y2="58.34" width="0.1524" layer="91"/>
-<label x="136.86" y="57.07" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+<wire x1="144.78" y1="53.34" x2="157.48" y2="53.34" width="0.1524" layer="91"/>
+<label x="157.48" y="53.34" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="PB0"/>
@@ -2797,8 +2839,8 @@ by exp-lbrs.ulp</description>
 <net name="TIM3_CH3" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="MTR_3"/>
-<wire x1="134.86" y1="43.1" x2="134.86" y2="58.34" width="0.1524" layer="91"/>
-<label x="134.86" y="57.07" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+<wire x1="144.78" y1="55.88" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
+<label x="157.48" y="55.88" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="PA7"/>
@@ -2809,8 +2851,8 @@ by exp-lbrs.ulp</description>
 <net name="TIM3_CH4" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="MTR_4"/>
-<wire x1="132.86" y1="43.1" x2="132.86" y2="58.34" width="0.1524" layer="91"/>
-<label x="132.86" y="57.07" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+<wire x1="144.78" y1="58.42" x2="157.48" y2="58.42" width="0.1524" layer="91"/>
+<label x="157.48" y="58.42" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="PA6"/>
@@ -2979,8 +3021,8 @@ by exp-lbrs.ulp</description>
 <net name="TLM" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="TLM"/>
-<wire x1="140.86" y1="43.1" x2="140.86" y2="58.34" width="0.1524" layer="91"/>
-<label x="140.86" y="57.07" size="1.778" layer="95" rot="R90" align="bottom-right"/>
+<wire x1="144.78" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
+<label x="157.48" y="48.26" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="PA5"/>
@@ -2996,8 +3038,8 @@ by exp-lbrs.ulp</description>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="ADC"/>
-<wire x1="142.86" y1="43.1" x2="142.86" y2="57.15" width="0.1524" layer="91"/>
-<label x="143.002" y="52.07" size="1.778" layer="95" rot="R90"/>
+<wire x1="144.78" y1="45.72" x2="157.48" y2="45.72" width="0.1524" layer="91"/>
+<label x="152.4" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
