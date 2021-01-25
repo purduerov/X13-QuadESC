@@ -2311,7 +2311,7 @@ by exp-lbrs.ulp</description>
 </library>
 <library name="JST 8 pin">
 <packages>
-<package name="8PIN_CONNECTOR" urn="urn:adsk.eagle:footprint:25902941/2">
+<package name="8PIN_CONNECTOR" urn="urn:adsk.eagle:footprint:25902941/2" locally_modified="yes">
 <wire x1="0" y1="0" x2="10" y2="0" width="0.1524" layer="21"/>
 <wire x1="10" y1="0" x2="10" y2="4.25" width="0.1524" layer="21"/>
 <wire x1="10" y1="4.25" x2="0" y2="4.25" width="0.1524" layer="21"/>
@@ -2333,6 +2333,8 @@ by exp-lbrs.ulp</description>
 <smd name="7" x="7.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
 <smd name="8" x="8.5" y="-0.75" dx="0.6" dy="1.5" layer="1"/>
 <text x="1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<smd name="MECH1" x="0.2" y="3.81" dx="1.2" dy="1.8" layer="1"/>
+<smd name="MECH2" x="9.8" y="3.81" dx="1.2" dy="1.8" layer="1"/>
 </package>
 </packages>
 <packages3d>
