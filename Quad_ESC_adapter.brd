@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="3" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -159,10 +159,9 @@
 <board>
 <plain>
 <wire x1="-17.78" y1="0" x2="12.954" y2="0" width="0" layer="20"/>
-<wire x1="45.847" y1="6.35" x2="45.847" y2="1.27" width="0" layer="20"/>
-<wire x1="20.32" y1="6.477" x2="20.32" y2="1.397" width="0" layer="20"/>
-<wire x1="20.32" y1="1.397" x2="21.717" y2="0" width="0" layer="20" curve="90"/>
-<wire x1="21.717" y1="0" x2="44.577" y2="0" width="0" layer="20"/>
+<wire x1="45.847" y1="6.35" x2="45.847" y2="0" width="0" layer="20"/>
+<wire x1="20.955" y1="7.112" x2="20.955" y2="0" width="0" layer="20"/>
+<wire x1="20.955" y1="0" x2="45.847" y2="0" width="0" layer="20"/>
 <wire x1="53.086" y1="0" x2="83.82" y2="0" width="0" layer="20"/>
 <wire x1="83.82" y1="0" x2="83.82" y2="41.148" width="0" layer="20"/>
 <wire x1="83.82" y1="41.148" x2="-17.78" y2="41.148" width="0" layer="20"/>
@@ -171,35 +170,34 @@
 1/8/2021
 Grant Geyer
 Scott Hotchkiss</text>
-<wire x1="14.097" y1="34.544" x2="18.669" y2="34.544" width="0" layer="20"/>
-<wire x1="20.32" y1="33.02" x2="20.32" y2="24.257" width="0" layer="20"/>
-<wire x1="20.32" y1="24.257" x2="21.59" y2="22.987" width="0" layer="20" curve="90"/>
+<wire x1="14.097" y1="34.544" x2="18.796" y2="34.544" width="0" layer="20"/>
+<wire x1="20.955" y1="32.385" x2="20.955" y2="23.622" width="0" layer="20"/>
+<wire x1="20.955" y1="23.622" x2="21.59" y2="22.987" width="0" layer="20" curve="90"/>
 <wire x1="21.59" y1="22.987" x2="21.844" y2="22.987" width="0" layer="20"/>
 <wire x1="23.368" y1="21.463" x2="23.368" y2="9.017" width="0" layer="20"/>
 <wire x1="22.098" y1="7.747" x2="21.59" y2="7.747" width="0" layer="20"/>
-<wire x1="21.59" y1="7.747" x2="20.32" y2="6.477" width="0" layer="20" curve="90"/>
+<wire x1="21.59" y1="7.747" x2="20.955" y2="7.112" width="0" layer="20" curve="90"/>
 <wire x1="14.097" y1="34.544" x2="12.954" y2="33.274" width="0" layer="20" curve="90"/>
 <wire x1="12.954" y1="33.274" x2="12.954" y2="0" width="0" layer="20"/>
 <wire x1="53.086" y1="0" x2="53.086" y2="33.274" width="0" layer="20"/>
 <wire x1="53.086" y1="33.274" x2="52.07" y2="34.29" width="0" layer="20" curve="90"/>
-<wire x1="52.07" y1="34.29" x2="47.371" y2="34.29" width="0" layer="20"/>
-<wire x1="47.371" y1="34.29" x2="45.593" y2="32.766" width="0" layer="20" curve="90"/>
-<wire x1="45.593" y1="32.766" x2="45.593" y2="25.908" width="0" layer="20"/>
-<wire x1="44.704" y1="24.765" x2="33.782" y2="24.765" width="0" layer="20"/>
-<wire x1="33.782" y1="24.765" x2="32.639" y2="23.749" width="0" layer="20" curve="90"/>
-<wire x1="32.639" y1="23.749" x2="32.639" y2="17.272" width="0" layer="20"/>
-<wire x1="32.639" y1="17.272" x2="34.036" y2="15.875" width="0" layer="20" curve="90"/>
-<wire x1="34.036" y1="15.875" x2="40.513" y2="15.875" width="0" layer="20"/>
+<wire x1="52.07" y1="34.29" x2="46.736" y2="34.29" width="0" layer="20"/>
+<wire x1="46.736" y1="34.29" x2="45.085" y2="32.639" width="0" layer="20" curve="90"/>
+<wire x1="45.085" y1="32.639" x2="45.085" y2="25.781" width="0" layer="20"/>
+<wire x1="44.069" y1="24.765" x2="31.75" y2="24.765" width="0" layer="20"/>
+<wire x1="31.75" y1="24.765" x2="30.734" y2="23.749" width="0" layer="20" curve="90"/>
+<wire x1="30.734" y1="23.749" x2="30.734" y2="17.272" width="0" layer="20"/>
+<wire x1="30.734" y1="17.272" x2="32.131" y2="15.875" width="0" layer="20" curve="90"/>
+<wire x1="32.131" y1="15.875" x2="40.513" y2="15.875" width="0" layer="20"/>
 <wire x1="42.545" y1="13.843" x2="42.545" y2="9.017" width="0" layer="20"/>
 <wire x1="42.545" y1="9.017" x2="43.688" y2="7.874" width="0" layer="20" curve="90"/>
 <wire x1="43.688" y1="7.874" x2="44.323" y2="7.874" width="0" layer="20"/>
 <wire x1="21.844" y1="22.987" x2="23.368" y2="21.463" width="0" layer="20" curve="-90"/>
-<wire x1="23.368" y1="9.017" x2="22.098" y2="7.747" width="0" layer="20" curve="-96.025575"/>
-<wire x1="45.847" y1="1.27" x2="44.577" y2="0" width="0" layer="20" curve="-90"/>
+<wire x1="23.368" y1="9.017" x2="22.098" y2="7.747" width="0" layer="20" curve="-90"/>
 <wire x1="44.323" y1="7.874" x2="45.847" y2="6.35" width="0" layer="20" curve="-100.388858"/>
 <wire x1="40.513" y1="15.875" x2="42.545" y2="13.843" width="0" layer="20" curve="-90"/>
-<wire x1="45.593" y1="25.908" x2="44.704" y2="24.765" width="0" layer="20" curve="-90"/>
-<wire x1="18.669" y1="34.544" x2="20.32" y2="33.02" width="0" layer="20" curve="-94.763642"/>
+<wire x1="45.085" y1="25.781" x2="44.069" y2="24.765" width="0" layer="20" curve="-90"/>
+<wire x1="18.796" y1="34.544" x2="20.955" y2="32.385" width="0" layer="20" curve="-90"/>
 <rectangle x1="70.1675" y1="8.4201" x2="70.1929" y2="8.4455" layer="200"/>
 <rectangle x1="70.2437" y1="8.4201" x2="70.2691" y2="8.4455" layer="200"/>
 <rectangle x1="70.2945" y1="8.4201" x2="70.3199" y2="8.4455" layer="200"/>
@@ -3294,6 +3292,9 @@ Scott Hotchkiss</text>
 <rectangle x1="-3.8481" y1="22.5933" x2="-3.5433" y2="22.6695" layer="200"/>
 <rectangle x1="-2.0193" y1="22.5933" x2="-1.8669" y2="22.6695" layer="200"/>
 <rectangle x1="-0.2667" y1="22.5933" x2="-0.1143" y2="22.6695" layer="200"/>
+<text x="51.054" y="36.957" size="1.778" layer="25">12V</text>
+<text x="10.287" y="36.83" size="1.778" layer="25">GND</text>
+<text x="31.115" y="15.367" size="1.778" layer="26" rot="MR0">GND</text>
 </plain>
 <libraries>
 <library name="Tantalum Cap 150 uF - Kemet 2917 T491">
@@ -4342,8 +4343,8 @@ Please make sure your boards conform to these design rules.
 </polygon>
 <contactref element="U$10" pad="1"/>
 <polygon width="1.016" layer="16" isolate="0.3048">
-<vertex x="-19.558" y="29.972"/>
-<vertex x="6.223" y="29.972"/>
+<vertex x="-19.558" y="29.718"/>
+<vertex x="6.223" y="29.718"/>
 <vertex x="6.223" y="34.925"/>
 <vertex x="12.319" y="34.925"/>
 <vertex x="12.319" y="40.513"/>
@@ -4356,8 +4357,8 @@ Please make sure your boards conform to these design rules.
 <vertex x="11.176" y="32.258"/>
 </polygon>
 <polygon width="1.016" layer="1" isolate="0.3048">
-<vertex x="-20.828" y="29.972"/>
-<vertex x="6.223" y="29.972"/>
+<vertex x="-20.828" y="29.718"/>
+<vertex x="6.223" y="29.718"/>
 <vertex x="6.223" y="34.925"/>
 <vertex x="12.319" y="34.925"/>
 <vertex x="12.319" y="40.513"/>
