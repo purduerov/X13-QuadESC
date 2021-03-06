@@ -1366,18 +1366,18 @@ Warning: This is the KIT version of the AXIAL-0.1 package. This package has a sm
 <wire x1="2.449" y1="6.729" x2="-2.449" y2="6.729" width="0.1" layer="152"/>
 <wire x1="-2.449" y1="6.729" x2="-2.449" y2="-6.729" width="0.2" layer="21"/>
 <wire x1="-2.449" y1="6.729" x2="-2.449" y2="-6.729" width="0.1" layer="152"/>
-<pad name="1" x="-1" y="-5" drill="0.79" diameter="1.39" rot="R90" stop="no"/>
-<pad name="2" x="1" y="-5" drill="0.79" diameter="1.39" rot="R90" stop="no"/>
-<pad name="3" x="-1" y="-3" drill="0.79" diameter="1.39" rot="R90" stop="no"/>
-<pad name="4" x="1" y="-3" drill="0.79" diameter="1.39" rot="R90" stop="no"/>
-<pad name="5" x="-1" y="-1" drill="0.79" diameter="1.39" rot="R90" stop="no"/>
-<pad name="6" x="1" y="-1" drill="0.79" diameter="1.39" rot="R90" stop="no"/>
-<pad name="7" x="-1" y="1" drill="0.79" diameter="1.39" rot="R90" stop="no"/>
-<pad name="8" x="1" y="1" drill="0.79" diameter="1.39" rot="R90" stop="no"/>
-<pad name="9" x="-1" y="3" drill="0.79" diameter="1.39" rot="R90" stop="no"/>
-<pad name="10" x="1" y="3" drill="0.79" diameter="1.39" rot="R90" stop="no"/>
-<pad name="11" x="-1" y="5" drill="0.79" diameter="1.39" rot="R90" stop="no"/>
-<pad name="12" x="1" y="5" drill="0.79" diameter="1.39" rot="R90" stop="no"/>
+<pad name="1" x="-1" y="-5" drill="0.79" diameter="1.39" rot="R90"/>
+<pad name="2" x="1" y="-5" drill="0.79" diameter="1.39" rot="R90"/>
+<pad name="3" x="-1" y="-3" drill="0.79" diameter="1.39" rot="R90"/>
+<pad name="4" x="1" y="-3" drill="0.79" diameter="1.39" rot="R90"/>
+<pad name="5" x="-1" y="-1" drill="0.79" diameter="1.39" rot="R90"/>
+<pad name="6" x="1" y="-1" drill="0.79" diameter="1.39" rot="R90"/>
+<pad name="7" x="-1" y="1" drill="0.79" diameter="1.39" rot="R90"/>
+<pad name="8" x="1" y="1" drill="0.79" diameter="1.39" rot="R90"/>
+<pad name="9" x="-1" y="3" drill="0.79" diameter="1.39" rot="R90"/>
+<pad name="10" x="1" y="3" drill="0.79" diameter="1.39" rot="R90"/>
+<pad name="11" x="-1" y="5" drill="0.79" diameter="1.39" rot="R90"/>
+<pad name="12" x="1" y="5" drill="0.79" diameter="1.39" rot="R90"/>
 <wire x1="-2.667" y1="-6.985" x2="2.667" y2="-6.985" width="0.127" layer="40"/>
 <wire x1="2.667" y1="-6.985" x2="2.667" y2="6.858" width="0.127" layer="40"/>
 <wire x1="2.667" y1="6.858" x2="-2.667" y2="6.858" width="0.127" layer="40"/>
