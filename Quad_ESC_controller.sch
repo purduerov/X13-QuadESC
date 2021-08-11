@@ -2268,7 +2268,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="73.66" y="171.45" size="1.778" layer="91">STM32F042K6T6</text>
 <text x="16.51" y="91.948" size="1.778" layer="91">PROGRAMMING HEADERS</text>
 <text x="62.23" y="50.8" size="1.778" layer="91">CAN TRANSCEIVER</text>
-<text x="55.88" y="88.9" size="1.778" layer="91">ID resistor to backplane</text>
+<text x="50.8" y="109.22" size="1.778" layer="91">ID resistor to backplane</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="3.81" y="3.81" smashed="yes">
@@ -2886,9 +2886,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="TLM" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="PA10"/>
-<wire x1="109.22" y1="134.62" x2="127" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="134.62" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
 <label x="121.92" y="134.62" size="1.778" layer="95"/>
-<wire x1="127" y1="134.62" x2="127" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G1" pin="OUT"/>

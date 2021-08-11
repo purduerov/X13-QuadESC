@@ -1825,9 +1825,9 @@ Please make sure your boards conform to these design rules.
 <wire x1="19.05" y1="17.272" x2="19.05" y2="9.144" width="0.2032" layer="16"/>
 <via x="20.193" y="8.001" extent="1-16" drill="0.35"/>
 <wire x1="20.193" y1="8.001" x2="20.701" y2="7.493" width="0.2032" layer="1"/>
-<wire x1="20.701" y1="7.493" x2="20.701" y2="5.207" width="0.2032" layer="1"/>
-<wire x1="20.701" y1="5.207" x2="21.971" y2="3.937" width="0.2032" layer="1"/>
-<wire x1="21.971" y1="3.937" x2="22.799" y2="3.937" width="0.2032" layer="1"/>
+<wire x1="20.701" y1="7.493" x2="20.701" y2="4.953" width="0.2032" layer="1"/>
+<wire x1="20.701" y1="4.953" x2="21.717" y2="3.937" width="0.2032" layer="1"/>
+<wire x1="21.717" y1="3.937" x2="22.799" y2="3.937" width="0.2032" layer="1"/>
 <wire x1="19.05" y1="9.144" x2="20.193" y2="8.001" width="0.2032" layer="16"/>
 </signal>
 <signal name="SWDIO">
